@@ -37,7 +37,7 @@
 	</div>
 	<hr class="featurette-divider" />
 	<div class="featurette" height="512" style="min-height:512px; display:block;">
-		<img class="featurette-image pull-right" src="./includes/img/index_didapi.jpg" height="512" width="512"/>
+		<img class="featurette-image pull-right" src="/didapi/includes/img/index_didapi.jpg" height="512" width="512"/>
 		<h2 class="featurette-heading">
 			First featurette Heading 
 			<span class="muted">
@@ -54,7 +54,7 @@
 	
 	<hr class="featurette-divider" />
 	<div class="featurette" height="512" style="min-height:512px; display:block;">
-		<img class="featurette-image pull-left" src="./includes/img/menu_main.jpg" height="512" width="512"/>
+		<img class="featurette-image pull-left" src="/didapi/includes/img/menu_main.jpg" height="512" width="512"/>
 		<h2 class="featurette-heading">
 			Second featurette Heading 
 			<span class="muted">
@@ -71,7 +71,7 @@
 	
 	<hr class="featurette-divider" />
 	<div class="featurette" height="512" style="min-height:512px; display:block;">
-		<img class="featurette-image pull-right" src="./includes/img/menu_onions.jpg" height="512" width="512"/>
+		<img class="featurette-image pull-right" src="/didapi/includes/img/menu_onions.jpg" height="512" width="512"/>
 		<h2 class="featurette-heading">
 			Third featurette Heading 
 			<span class="muted">

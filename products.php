@@ -1,4 +1,4 @@
-<?php include("header.php") ?>
+<?php include("./header.php") ?>
 
 <div class="container-fluid">
 	<div class="row-fluid">
@@ -13,7 +13,7 @@
 					<li class="nav-header">Miel typés</li>
 					<li><a href="#oignon">Miel d'oignon</a></li>
 					<li><a href="#chataigner">Miel de Chataîgner</a></li>
-					<li><a href="#sarrasin">Miel de Sarrazin</a></li>
+					<li><a href="#sarrasin">Miel de Sarrasin</a></li>
 					<li><a href="#acacia">Miel d'Acacia</a></li>
 					<li class="nav-header">Produits de la ruche</li>
 					<li><a href="#gelee">Gelée Royale</a></li>
@@ -102,7 +102,7 @@
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/sarrasin.php">Détails</a>
 					</p>
 				</div>
 				

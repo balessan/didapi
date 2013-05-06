@@ -7,11 +7,11 @@
 
 	<div class="span9">
 		<div class="row-fluid">
-			<h1>Miel de Sarrasin</h1>
+			<h1>Miel d'Acacia</h1>
 		</div>
 		<div class="row-fluid">
 			<div class="span3" style="padding-top: 15px;">
-				<img src="/link/to/sarrasin" alt="/link/to/sarrasin" width="200">
+				<img src="/link/to/acacia" alt="/link/to/acacia" width="200">
 			</div>
 			
 			<div class="span9">
@@ -53,5 +53,3 @@
 		
 		
 </script>
-
-<?php include("../footer.php") ?>

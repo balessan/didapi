@@ -15,6 +15,7 @@
 		<div id="header">
 			<script src="/didapi/includes/js/jquery-1.9.1.min.js"></script>
 			<script src="/didapi/includes/js/bootstrap.min.js"></script>
+			<script src="/didapi/includes/js/base.js"></script>
 			<script src="/didapi/library/ckeditor/ckeditor.js"></script>
 			
 			<div class="navbar-wrapper">

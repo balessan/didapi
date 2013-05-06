@@ -7,11 +7,11 @@
 
 	<div class="span9">
 		<div class="row-fluid">
-			<h1>Miel de Sarrasin</h1>
+			<h1>Miel de Foret</h1>
 		</div>
 		<div class="row-fluid">
 			<div class="span3" style="padding-top: 15px;">
-				<img src="/link/to/sarrasin" alt="/link/to/sarrasin" width="200">
+				<img src="/link/to/foret" alt="/link/to/foret" width="200">
 			</div>
 			
 			<div class="span9">
@@ -43,7 +43,7 @@
 
 <script type="text/javascript">
 		$(function(){
-			$possibleValues = ["3.50 euros", "6.00 euros", "11.00 euros"];
+			$possibleValues = ["3.00 euros", "5.00 euros", "9.00 euros"];
 			$('.product-price-value').text(findPrice($('.product-price-select').val(), $possibleValues));
 						
 			$('.product-price-select').change(function(e){
@@ -53,5 +53,3 @@
 		
 		
 </script>
-
-<?php include("../footer.php") ?>

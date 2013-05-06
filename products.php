@@ -38,7 +38,7 @@
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/printemps.php">Détails</a>
 					</p>
 				</div>
 				
@@ -48,7 +48,7 @@
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/foret.php">Détails</a>
 					</p>
 				</div>
 			
@@ -58,21 +58,12 @@
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/fleurs.php">Détails</a>
 					</p>
 				</div>	
 			</div>
 			
 			<div class="row-fluid">
-				<div id="colza" class="span4">
-					<h2>Miel de Colza</h2>
-					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">Détails</a>
-					</p>
-				</div>
 				
 				<div id="oignon" class="span4">
 					<h2>Miel d'oignon</h2>
@@ -80,7 +71,7 @@
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/oignon.php">Détails</a>
 					</p>
 				</div>
 			</div>
@@ -92,7 +83,7 @@
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/chataigner.php">Détails</a>
 					</p>
 				</div>
 				
@@ -112,19 +103,19 @@
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/acacia.php">Détails</a>
 					</p>
 				</div>
 			</div>
 			
 			<div class="row-fluid">
 				<div id="gelee" class="span4">
-					<h2>Gelee Royale</h2>
+					<h2>Pain d'epices</h2>
 					<p>
 						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 					</p>
 					<p>
-						<a class="btn" href="#">Détails</a>
+						<a class="btn" href="./products/pain-d-epices.php">Détails</a>
 					</p>
 				</div>
 				

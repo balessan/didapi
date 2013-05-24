@@ -1,8 +1,19 @@
 <?php include("header.php") ?>
 
+<script src="/didapi/library/OpenLayers/OpenLayers.js"></script>
+<style type="text/css">
+	img 
+	{ 
+		max-width:none; 
+	}
+	
+	.span3 { padding-left: 10px; }
+</style> 
+
 <div class="row-fluid">
 	<div class="span3">
-		<h2>Barre de menus</h2>
+		<h2>Notre localisation</h2>
+		<div id="StFlo" style="height:250px; width:250px;"></div>
 	</div>
 	
 	<div class="span9">
@@ -20,6 +31,35 @@
 		</form>
 		
 		
+		<div class="contact">
+			<h2>Nous Contacter directement</h2>
+			<p>
+				<p>
+					<label>Adresse:</label>     25, route de Villemurlin<br>
+				</p>
+				
+				<p>
+					<label>Ville:</label>       Saint-Florent le Jeune<br>
+				</p>
+				
+				<p>
+					<label>Code postal:</label> 45600<br>
+				</p>
+				
+				<p>
+					<label>Tél:</label>         02 38 36 38 92<br>
+				</p>
+				
+				<p>
+					<label>Mobile:</label>      06 76 19 30 83<br>
+				</p>
+				
+				<p>
+					<label>Courriel:</label>    <a href="mailto:didapi@sfr.fr">didapi@sfr.fr</a>
+				</p>
+			</p>
+		</div>
+		
 		<div id="contact_table_wrapper">
 			<div id="contact_table" />
 			
@@ -29,6 +69,7 @@
     <script type="text/javascript">
 		$(function(){
 			refreshContactTable();
+			locateSaintFlorent();
 			
 			$('#add_contact_submit').click(function(e){
 				e.preventDefault();  
@@ -59,6 +100,31 @@
 			$('#contact_table_wrapper').load('./ajax/load_contact_list.php', function(){
 			   setTimeout(refreshContactTable, 5000);
 			});
+		}
+			
+		function locateSaintFlorent()
+		{
+			stMap = new OpenLayers.Map( 'StFlo');
+			mapOSMLayer = new OpenLayers.Layer.OSM("Simple OSM Map");
+			stMap.addLayer(mapOSMLayer);
+			
+			var targetProj = new OpenLayers.Projection("EPSG:900913");
+			var sourceProj = new OpenLayers.Projection("EPSG:4326");
+			
+			var position = new OpenLayers.LonLat(2.476043,47.689428);
+			
+			var markers = new OpenLayers.Layer.Markers( "Markers" );
+			markers.addMarker(new OpenLayers.Marker(position));
+			stMap.addLayer(markers);
+			
+			var center = position.transform(
+					sourceProj,
+					targetProj
+				);
+			
+			stMap.setCenter(center, 6);
+			
+			//map.zoomToMaxExtent();
 		}
 	</script>
 </div>

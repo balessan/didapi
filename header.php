@@ -54,8 +54,8 @@
 						<img src="/didapi/includes/img/index_didapi_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>Premiere image</h1>
-								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl purus, dictum lacinia massa. Ut pulvinar, sem rhoncus congue.</p>
+								<h1>Levée de cadres</h1>
+								<p class="lead">Une des opérations parmi une longue liste à répéter un bon nombre de fois à chaque étape.</p>
 							</div>
 						</div>
 					</div>
@@ -63,8 +63,8 @@
 						<img src="/didapi/includes/img/menu_main_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>Deuxième image</h1>
-								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl purus, dictum lacinia massa. Ut pulvinar, sem rhoncus congue.</p>
+								<h1>Un de nos ruchers</h1>
+								<p class="lead">Un de nos ruchers, situés proche de Benoît-sur-Loire pour celui-là...</p>
 							</div>
 						</div>
 					</div>
@@ -72,8 +72,10 @@
 						<img src="/didapi/includes/img/menu_onions_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>Troisième image</h1>
-								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl purus, dictum lacinia massa. Ut pulvinar, sem rhoncus congue.</p>
+								<a href="./products.php">
+									<h1>Champ d'oignons</h1>
+									<p class="lead">Saviez-vous que parmi tous les miels produits par Didier, il y avait du miel d'oignon ? Nos produits, c'est par ici !</p>
+								</a>
 							</div>
 						</div>
 					</div>

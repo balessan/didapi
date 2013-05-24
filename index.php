@@ -6,31 +6,31 @@
 		<div class="content-wrapper">
 			<div class="span4">
 				<h2 id="actu">Actualités</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id sapien et dolor congue porta ut at.				Donec vulputate vulputate metus.
+				<p class="section-header">
+					Toutes les actualités de la vie des colonies de l'apiculteur de Saint-Florent, c'est par ici !
 				</p>
 				<p>
-					<a class="btn" href="./actu.php">View details</a>
+					<a class="btn" href="./actu.php">Plus de détails...</a>
 				</p>
 			</div>
 			
 			<div class="span4">
 				<h2 id="products">Nos produits</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id sapien et dolor congue porta ut at.				Donec vulputate vulputate metus.
+				<p class="section-header">
+					Pour plus d'informations sur nos produits, c'est par là ! 
 				</p>
 				<p>
-					<a class="btn" href="./products.php">View details</a>
+					<a class="btn" href="./products.php">Plus de détails...</a>
 				</p>
 			</div>
 			
 			<div class="span4">
-				<h2 id="misc">A propos</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id sapien et dolor congue porta ut at.				Donec vulputate vulputate metus.
+				<h2 id="about">A propos</h2>
+				<p class="section-header">
+					Pour plus d'informations sur le parcours de Didier en apiculture, cette section y est dédié.
 				</p>
 				<p>
-					<a class="btn" href="./about.php">View details</a>
+					<a class="btn" href="./about.php">Plus de détails...</a>
 				</p>
 			</div>	
 		</div>

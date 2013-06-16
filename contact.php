@@ -18,7 +18,7 @@
 	
 	<div class="span9">
 		<h1>Contactez-nous</h1>
-		<form id="contact_form"></h2>
+		<form id="contact_form">
 			<fieldset>
 				<legend>Veuillez utiliser le formulaire suivant pour nous contacter</legend>
 				<label>Nom</label><input type="text" name="name" id="name" placeholder="Votre nom" />
@@ -26,7 +26,7 @@
 				<label>Courriel</label><input type="email" name="email" id="email" placeholder="Votre adresse courriel" />
 				<label>Tel</label><input type="tel" name="phone" id="phone" placeholder="Votre numéro de tél" />
 				<label>Commentaires</label><textarea name="comment" id="comment" rows="10" cols="40" style="width:50%;" placeholder="Vos commentaires"></textarea><br>
-				<input id="add_contact_submit" type="submit" name="submit" class="button" onClick="" />	
+				<input id="add_contact_submit" type="submit" name="submit" class="button"/>	
 			</fieldset>
 		</form>
 		
@@ -82,7 +82,7 @@
 				});
 				
 				$.ajax({
-				  url: './ajax/save_contact.php',
+				  url: './includes/ajax/save_contact.php',
 				  type: 'POST',
 				  data: $("#contact_form").serialize(),
 				  dataType: 'json',
@@ -97,7 +97,7 @@
 		});
 		
 		function refreshContactTable(){
-			$('#contact_table_wrapper').load('./ajax/load_contact_list.php', function(){
+			$('#contact_table_wrapper').load('./includes/ajax/load_contact_list.php', function(){
 			   setTimeout(refreshContactTable, 5000);
 			});
 		}

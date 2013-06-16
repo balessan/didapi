@@ -1,8 +1,8 @@
 <?php
-	require('../library/RedBeanORM/rb.php');
+	require('../../library/RedBeanORM/rb.php');
 		
 	R::setup('mysql:host=localhost;
-			dbname=didapibs','root','');
+			dbname=didapi','root','');
 			
 	$allContacts = R::findAll('contact', '');
 ?>

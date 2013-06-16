@@ -13,17 +13,14 @@
 	  
 	  $data = array(
 		'name'      => convertAsSafeString($_POST['name']),
-		'firstname' => convertAsSafeString($_POST['firstname']),
-		'email'     => convertAsSafeString($_POST['email']),
-		'phone'     => convertAsSafeString($_POST['phone']),
-		'comment'   => convertAsSafeString($_POST['comment'])
+		'location'  => convertAsSafeString($_POST['location']),
 	  );
 
 	  // always return true if you save the contact data ok or false if it fails
-	  $response['status'] = saveContact($data) ? 'success' : 'error';
+	  $response['status'] = saveRucher($data) ? 'success' : 'error';
 	  $response['message'] = $response['status']
-		  ? 'Votre message a bien ete sauvegarde!'
-		  : 'Il y a eu un probleme lors de la sauvegarde du message.';
+		  ? 'Le rucher a bien ete cree!'
+		  : 'Il y a eu un probleme lors de la creation du rucher.';
 
 	  header('Content-type: application/json');
 	  echo json_encode($response);
@@ -42,21 +39,18 @@
 		return $result;
 	}
 	
-	function saveContact($data)
+	function saveRucher($data)
 	{
 		$success = false;
 		
 		R::setup('mysql:host=localhost;
 			dbname=didapi','root','');
 		
-		$contact = R::dispense('contact');
-		$contact->name = $data['name'];
-		$contact->firstname = $data['firstname'];
-		$contact->email = $data['email'];
-		$contact->phone = $data['phone'];
-		$contact->comment = $data['comment'];
+		$rucher = R::dispense('rucher');
+		$rucher->name = $data['name'];
+		$rucher->location = $data['location'];
 		
-		$id = R::store($contact);
+		$id = R::store($rucher);
 		
 		if ($id != null)
 		{

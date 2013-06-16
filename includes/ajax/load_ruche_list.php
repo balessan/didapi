@@ -1,10 +1,10 @@
 <?php
-	require('../library/RedBeanORM/rb.php');
+	require('../../library/RedBeanORM/rb.php');
 		
 	R::setup('mysql:host=localhost;
 			dbname=didapi','root','');
 	
-	$rucher_id = $GET['rucher'];
+	$rucher_id = $GET['rucher_id'];
 	
 	if(isset($rucher_id))
 	{
@@ -33,3 +33,9 @@
 	?>	
 	</tbody>
 </table>
+<form id="new_ruche_form<?php $rucher_id ?>" style="diplay:none;"
+<button class="display_ruche_form" onclick="displayRucheForm()">
+
+<script type="text/javascript">
+	
+</script>

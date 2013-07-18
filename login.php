@@ -38,16 +38,17 @@
 					$form = $(this).closest('form');
 					
 					$.ajax({
-					  url: './ajax/login_user.php',
+					  url: './includes/ajax/login_user.php',
 					  type: 'POST',
 					  data: $("#login_form").serialize(),
 					  dataType: 'json',
 					  success: function(responseJson) {
 						 $form.before("<p>"+responseJson.message+"</p>");
+						 document.location.href = "./admin/index.php";
 					  },
 					  error: function() {
 						 $form.before("<p>There was an error processing your request.</p>");
-					}
+					  }
 					});
 				});   
 		}
@@ -59,7 +60,7 @@
 				$form = $(this).closest('form');
 				
 				$.ajax({
-				  url: './ajax/create_user.php',
+				  url: './includes/ajax/create_user.php',
 				  type: 'POST',
 				  data: $("#user_form").serialize(),
 				  dataType: 'json',
@@ -68,7 +69,7 @@
 				  },
 				  error: function() {
 					 $form.before("<p>There was an error processing your request.</p>");
-				}
+				  }
 				});
 			});   
 		}

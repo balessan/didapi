@@ -1,5 +1,5 @@
 <?php
-	require('../library/RedBeanORM/rb.php');
+	require('../../library/RedBeanORM/rb.php');
 	$response = array();
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -19,15 +19,14 @@
 	function createUser()
 	{
 		$success = false;
-		$user = null;
 		
 		R::setup('mysql:host=localhost;
-			dbname=didapibs','root','');
+			dbname=didapi','root','');
 		
-		$user = R::find('user', ' username = ?', array( 'admin') );
+	//$user = R::find('user', ' username = ?', array( 'admin') );
 		
-		if (!isset($user))
-		{
+	//	if (!isset($user))
+	//	{
 			$user = R::dispense('user');
 			
 			$user->username = 'admin';
@@ -42,11 +41,11 @@
 			{
 				$success = true;
 			}
-		}
-		else
-		{
-			$success = true;
-		}
+	//	}
+	//	else
+	//	{
+	//		$success = false;
+	//	}
 		
 		return $success;
 	}

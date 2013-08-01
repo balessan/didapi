@@ -1,6 +1,7 @@
 <?php
-		
+	require_once('Mail.php');	
 	require('../../library/RedBeanORM/rb.php');
+	
 	$response = array();
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -57,12 +58,54 @@
 		$contact->comment = $data['comment'];
 		
 		$id = R::store($contact);
-		
+		echo "LAAAAA";	
+		SendContactMail($contact);
+
 		if ($id != null)
 		{
 			$success = true;
 		}
 		
 		return $success;
+	}
+	
+	function SendContactMail($contact)
+	{
+		echo "LA encore";
+		$from = $contact->email;
+		$to = "benoit.alessandroni@gmail.com";
+		$subject = "Contact";
+		$body = $contact->comment;
+		echo "la la ";
+		$host     = "stmp.didapi.fr";
+		$username = "postmaster@didapi.fr";
+		$password = "8puMfhR3";
+		echo "la aussi";
+		$headers = array('From' => $from,
+				'To' => $to,
+				'Subject' => $subject);
+		echo "headers bien forme";
+		$smtp = Mail::factory('smtp',
+				array(
+					'host' => $host,
+					'port' => '465',
+					'auth' => true,
+					'username' => $username,
+					'password' => $password
+				)
+			);
+		
+		echo "mail bien forme";
+		
+		$mail = $smtp->send($to, $headers, $body);
+		echo "mail envoye";
+
+		if (PEAR::isError($mail)) {
+			echo "HERE";
+			echo ("<p>" . $mail->getMessage() . "</p>");
+		} else {
+			echo ("<p>Message successfully sent</p>");
+		}
+		echo "mail en erreyr";
 	}
 ?>

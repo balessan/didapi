@@ -68,7 +68,7 @@
 	
     <script type="text/javascript">
 		$(function(){
-			refreshContactTable();
+			//refreshContactTable();
 			locateSaintFlorent();
 			
 			$('#add_contact_submit').click(function(e){

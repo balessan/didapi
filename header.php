@@ -25,15 +25,16 @@
 							<a class="brand" href="/didapi/index.php">Didapi</a>
 							<div class="nav-collapse collapse">
 								<p class="navbar-text pull-right">
-									Connecté en tant que 
-									<a href="/didapi/profile.php" class="navbar-link">
-										<?php 
-											if (isset($_SESSION['username']))
-												echo $_SESSION['username'];
-											else
-												echo 'Username';
-										?>
-									</a>
+									<?php 
+										if (isset($_SESSION['username']))
+										{
+											echo '<a href="/didapi/profile.php" class="navbar-link">';
+											echo utf8_decode("ConnectÃ© en tant que");
+											echo utf8_decode($_SESSION['username']);
+											echo '</a>';
+										}      
+										else echo utf8_decode('Non connectÃ©');
+									?>
 								</p>	
 								<ul class="nav">
 								  <li><a href="/didapi/index.php"><i class="icon-home icon-white"></i> Accueil</a></li>
@@ -54,8 +55,8 @@
 						<img src="/didapi/includes/img/index_didapi_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>Levée de cadres</h1>
-								<p class="lead">Une des opérations parmi une longue liste à répéter un bon nombre de fois à chaque étape.</p>
+								<h1><?php echo utf8_decode("LevÃ©e de cadres") ?></h1>
+								<p class="lead"><?php echo utf8_decode("Une des opÃ©rations parmi une longue liste Ã  rÃ©pÃ©ter un bon nombre de fois Ã  chaque Ã©tape.") ?></p>
 							</div>
 						</div>
 					</div>
@@ -64,7 +65,7 @@
 						<div class="container">
 							<div class="carousel-caption">
 								<h1>Un de nos ruchers</h1>
-								<p class="lead">Un de nos ruchers, situés proche de Benoît-sur-Loire pour celui-là...</p>
+								<p class="lead"><?php echo utf8_decode("Un de nos ruchers, situÃ©s proche de BenoÃ®t-sur-Loire pour celui-lÃ ...") ?></p>
 							</div>
 						</div>
 					</div>
@@ -72,10 +73,8 @@
 						<img src="/didapi/includes/img/menu_onions_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
-								<a href="./products.php">
-									<h1>Champ d'oignons</h1>
-									<p class="lead">Saviez-vous que parmi tous les miels produits par Didier, il y avait du miel d'oignon ? Nos produits, c'est par ici !</p>
-								</a>
+								<h1><?php echo utf8_decode("Champ d'oignons") ?></h1>
+								<p class="lead"><?php echo utf8_decode('Saviez-vous que parmi tous les miels produits par Didier, il y avait du miel d\'oignon ? <a href="products.php">Nos produits, c\'est par ici !</a>') ?></p>
 							</div>
 						</div>
 					</div>

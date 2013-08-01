@@ -5,37 +5,37 @@
 		
 		<div class="content-wrapper">
 			<div class="span4">
-				<h2 id="actu">Actualités</h2>
+				<?php echo utf8_decode('<h2 id="actu">ActualitÃ©s</h2>'); ?>
 				<p class="section-header">
-					Toutes les actualités de la vie des colonies de l'apiculteur de Saint-Florent, c'est par ici !
+					<?php echo utf8_decode("Toutes les actualitÃ©s de la vie des colonies de l\'apiculteur de Saint-Florent, c\'est par ici !"); ?>
 				</p>
 				<p>
-					<a class="btn" href="./actu.php">Plus de détails...</a>
+					<?php echo utf8_decode("<a class=\"btn\" href=\"./actu.php\">Plus de dÃ©tails...</a>"); ?>
 				</p>
 			</div>
 			
 			<div class="span4">
 				<h2 id="products">Nos produits</h2>
 				<p class="section-header">
-					Pour plus d'informations sur nos produits, c'est par là ! 
+					<?php echo utf8_decode("Pour plus d'informations sur nos produits, c'est par lÃ  !"); ?> 
 				</p>
 				<p>
-					<a class="btn" href="./products.php">Plus de détails...</a>
+					<?php echo utf8_decode("<a class=\"btn\" href=\"./products.php\">Plus de dÃ©tails...</a>"); ?>
 				</p>
 			</div>
 			
 			<div class="span4">
 				<h2 id="about">A propos</h2>
 				<p class="section-header">
-					Pour plus d'informations sur le parcours de Didier en apiculture, cette section y est dédié.
+					<?php echo utf8_decode("Pour plus d'informations sur le parcours de Didier en apiculture, cette section y est dÃ©diÃ©."); ?>
 				</p>
 				<p>
-					<a class="btn" href="./about.php">Plus de détails...</a>
+					<?php echo utf8_decode("<a class=\"btn\" href=\"./about.php\">Plus de dÃ©tails...</a>"); ?>
 				</p>
 			</div>	
 		</div>
 	</div>
-	<hr class="featurette-divider" />
+	<!-- <hr class="featurette-divider" />
 	<div class="featurette" height="512" style="min-height:512px; display:block;">
 		<img class="featurette-image pull-right" src="/didapi/includes/img/index_didapi.jpg" height="512" width="512"/>
 		<h2 class="featurette-heading">
@@ -84,7 +84,7 @@
 			Praesent commodo cursus magna, vel scelerisque nisl consectetur. 
 			Fusce dapibus, tellus ac cursus commodo.
 		</p>
-	</div>
+	</div>-->
 </div>
 
 <?php include("footer.php") ?>

@@ -5,12 +5,14 @@
 
 	$currentUser = new User($_SESSION['username'], $_SESSION['firstname'], $_SESSION['name'], $_SESSION['is_admin'], $_SESSION['user_id']);
 		
-	if ($currentUser->IsAdmin())
+	if (!$currentUser->IsAdmin())
 	{
-		include('../header.php');	
+		header("location: /index.php");
 	}
 	else
-	{	
-		header("location: http://didapi.fr/");
+	{
+		include('../header.php');
+		
+		include('../footer.php');
 	}
 ?>

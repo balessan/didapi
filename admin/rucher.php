@@ -80,6 +80,10 @@
 		$('#rucher_table_wrapper').load('../includes/ajax/load_rucher_list.php', '');
 	}
 
+	function refreshRucheTable(rucherId){
+		$('#ruche_table_wrapper' + rucherId).load('includes/ajax/load_ruche_list.php?rucher_id=' . rucherId , '');
+	}
+
 </script>
 
 <?php include("../footer.php") ?>

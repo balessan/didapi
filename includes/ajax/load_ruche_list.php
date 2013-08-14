@@ -1,19 +1,18 @@
 <?php
-	require('../../library/RedBeanORM/rb.php');
-		
+	require_once('../../library/RedBeanORM/rb.php');
+	
 	R::setup('mysql:host=localhost;
 			dbname=didapi','root','');
-	echo 'LA';
+	
 	$rucher_id = $_GET["rucher_id"];
-	echo $rucher_id;
+	
 	if(isset($rucher_id))
 	{
-		echo 'LA';
 		$allRuches = R::findAll('ruche', ' rucher_id = :rucher_id', array(':rucher_id' => $rucher_id));
-		echo $allRuches;
 	}
-
-
+	echo "TOTO";
+	if (isset($allRuches))
+	{
 	echo '<table class="table" style="width: 100%;">
 		<thead>
 			<th>Id</th>
@@ -30,8 +29,9 @@
 			echo '</tr>';
 		}
 	echo '</tbody>
-	</table>
-<form id="new_ruche_form' . $rucher_id . '"  style="display: none;">
+	</table>';
+	}
+echo '<form id="new_ruche_form' . $rucher_id . '"  style="display: none;">
 	<legend>Ajouter une nouvelle ruche au rucher</legend>
 	<fieldset>
 		<label>Numéro</label><input type="text" name="name" />

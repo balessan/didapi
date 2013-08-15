@@ -37,17 +37,19 @@
 <script type="text/javascript">
 	function createRucheFor(rucherId)
 	{
-		e.preventDefault();
 		$form = $(this).closest('form');
 		
 		$.ajax({
-			url: '../includes/ajax/save_ruche.php?rucher_id=' + rucherId,
+			url: '../includes/ajax/save_ruche.php',
 			type: 'POST',
-			data: $('#rucher_form' + rucherId).serialize(),
+			data: $('#new_ruche_form' + rucherId).serialize(),
 			dataType: 'json',
 			success: function(responseJson) {
 				$form.before("<p>" + responseJson.message + "</p>");
-				refreshRucheTable()
+				refreshRucheTable();
+			},
+			error: function() {
+				$form.before("<p>There was an error processing your request.</p>");
 			}	
 		});
 	}

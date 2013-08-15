@@ -1,11 +1,9 @@
 <?php
 		
-	require('../../library/RedBeanORM/rb.php');
+	require_once('../../library/RedBeanORM/rb.php');
 	$response = array();
 	
-	$rucher_id = $GET['rucher_id'];
-
-	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($rucher_id)) {
+	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	  // if form has been posted process data
 
 	  // you dont need the addContact function you jsut need to put it in a new array
@@ -15,7 +13,7 @@
 	  
 	  $data = array(
 		'name'      => convertAsSafeString($_POST['name']),
-		'rucher_id' => convertAsSafeString($rucher_id)
+		'rucher_id' => convertAsSafeString($_POST['rucher_id'])
 	  );
 
 	  // always return true if you save the contact data ok or false if it fails
@@ -43,22 +41,34 @@
 	
 	function saveRuche($data)
 	{
+
 		$success = false;
-		
+
 		R::setup('mysql:host=localhost;
 			dbname=didapi','root','');
 		
-		$ruche = R::dispense('ruche')
+		$ruche = R::dispense('ruche');
+		echo 'TOTO<br>';
 		$ruche->name = $data['name'];
+		echo 'TOTO<br>';
 		$ruche_id = R::store($ruche);
 
-		$rucher = R::dispense('rucher', 'id = :rucher_id', array('rucher_id' => $rucher_id));
+		echo 'TOTO<br>';
+		$rucher = R::findOne('rucher', 'id = :rucher_id', array('rucher_id' => $rucher_id));
+		echo 'TOTO<br>';
 		$rucher->ownRuche[] = $ruche;
 		
-		$saved_rucher_id = R::store($rucher);
+		echo 'TOTO<br>';
+		$saved_rucher_id = R::updateRecord('rucher', $rucher, $rucher_id);
 		
-		if ($ruche_id != null && $saved_rucher_id != null)
+		echo 'TOTO<br>';
+		echo $ruche_id;
+		echo $saved_rucher_id;
+
+		echo 'TOTO<br>';
+		if (isset($ruche_id) && isset($saved_rucher_id))
 		{
+			echo 'TOTO<br>';
 			$success = true;
 		}
 		

@@ -1,6 +1,6 @@
 <?php
 		
-	require('../../library/RedBeanORM/rb.php');
+	require_once('../../library/RedBeanORM/rb.php');
 	$response = array();
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {

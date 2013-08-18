@@ -4,19 +4,19 @@
 		<title>Didier Alessandroni - Apiculteur</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
-		<link href="/didapi/includes/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/didapi/includes/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<link href="/didapi/includes/css/base.css" rel="stylesheet">
+		<link href="./includes/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./includes/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="./includes/css/base.css" rel="stylesheet">
 	</head>
 	<body>
 		
 		<?php if (!isset($_SESSION)) { session_start(); } ?>
 		
 		<div id="header">
-			<script src="/didapi/includes/js/jquery-1.9.1.min.js"></script>
-			<script src="/didapi/includes/js/bootstrap.min.js"></script>
-			<script src="/didapi/includes/js/base.js"></script>
-			<script src="/didapi/library/ckeditor/ckeditor.js"></script>
+			<script src="./includes/js/jquery-1.9.1.min.js"></script>
+			<script src="./includes/js/bootstrap.min.js"></script>
+			<script src="./includes/js/base.js"></script>
+			<script src="./library/ckeditor/ckeditor.js"></script>
 			
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">

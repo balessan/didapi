@@ -18,31 +18,29 @@
 			<script src="/didapi/includes/js/base.js"></script>
 			<script src="/didapi/library/ckeditor/ckeditor.js"></script>
 			
-			<div class="navbar-wrapper">
-				<div class="container">
-					<div class="navbar navbar-inverse">
-						<div class="navbar-inner">
-							<a class="brand" href="/didapi/index.php">Didapi</a>
-							<div class="nav-collapse collapse">
-								<p class="navbar-text pull-right">
-									<?php 
-										if (isset($_SESSION['username']))
-										{
-											echo '<a href="/didapi/profile.php" class="navbar-link">';
-											echo utf8_decode("Connecté en tant que");
-											echo utf8_decode($_SESSION['username']);
-											echo '</a>';
-										}      
-										else echo utf8_decode('Non connecté');
-									?>
-								</p>	
-								<ul class="nav">
-								  <li><a href="/didapi/index.php"><i class="icon-home icon-white"></i> Accueil</a></li>
-								  <li><a href="/didapi/about.php"><i class="icon-file icon-white"></i> A propos</a></li>
-								  <li><a href="/didapi/contact.php"><i class="icon-pencil icon icon-white"></i> Contact</a></li>
-								  <li><a href="/didapi/products.php"><i class="icon-book icon- icon-white"></i> Produits</a></li>
-								</ul>
-							</div>
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<a class="brand" href="/didapi/index.php">Didapi</a>
+						<div class="nav-collapse collapse">
+							<p class="navbar-text pull-right">
+							<?php 
+									if (isset($_SESSION['username']))
+									{
+										echo '<a href="/didapi/profile.php" class="navbar-link">';
+										echo utf8_decode("Connecté en tant que");
+										echo utf8_decode($_SESSION['username']);
+										echo '</a>';
+									}      
+									else echo utf8_decode('<a href="./login.php">Non connecté</a>');
+								?>
+							</p>	
+							<ul class="nav">
+							  <li><a href="/didapi/index.php"><i class="icon-home icon-white"></i> Accueil</a></li>
+							  <li><a href="/didapi/about.php"><i class="icon-file icon-white"></i> A propos</a></li>
+							  <li><a href="/didapi/contact.php"><i class="icon-pencil icon icon-white"></i> Contact</a></li>
+							  <li><a href="/didapi/products.php"><i class="icon-book icon- icon-white"></i> Produits</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>

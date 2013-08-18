@@ -10,7 +10,6 @@
 	  // and it doesnt make sense in this context so jsut do it here
 	  // then used json_decode and json_decode to read/save your json in
 	  // saveContact()
-	  
 	  $data = array(
 		'name'      => convertAsSafeString($_POST['name']),
 		'rucher_id' => convertAsSafeString($_POST['rucher_id'])
@@ -41,37 +40,28 @@
 	
 	function saveRuche($data)
 	{
-
 		$success = false;
 
 		R::setup('mysql:host=localhost;
 			dbname=didapi','root','');
 		
 		$ruche = R::dispense('ruche');
-		echo 'TOTO<br>';
 		$ruche->name = $data['name'];
-		echo 'TOTO<br>';
 		$ruche_id = R::store($ruche);
-
-		echo 'TOTO<br>';
-		$rucher = R::findOne('rucher', 'id = :rucher_id', array('rucher_id' => $rucher_id));
-		echo 'TOTO<br>';
-		$rucher->ownRuche[] = $ruche;
 		
-		echo 'TOTO<br>';
-		$saved_rucher_id = R::updateRecord('rucher', $rucher, $rucher_id);
+		$rucher = R::load('rucher', $data['rucher_id']);
 		
-		echo 'TOTO<br>';
-		echo $ruche_id;
-		echo $saved_rucher_id;
-
-		echo 'TOTO<br>';
-		if (isset($ruche_id) && isset($saved_rucher_id))
+		if ($rucher->id)
 		{
-			echo 'TOTO<br>';
-			$success = true;
+			$rucher->ownRuche[] = $ruche;
+			$saved_rucher_id = R::store($rucher);
+			
+			if (isset($ruche_id) && isset($saved_rucher_id))
+			{
+				$success = true;
+			}
 		}
-		
+
 		return $success;
 	}
 ?>

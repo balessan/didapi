@@ -46,7 +46,7 @@
 			dataType: 'json',
 			success: function(responseJson) {
 				$form.before("<p>" + responseJson.message + "</p>");
-				refreshRucheTable();
+				refreshRucheTable(rucherId);
 			},
 			error: function() {
 				$form.before("<p>There was an error processing your request.</p>");

@@ -11,7 +11,7 @@
 	{
 		$allRuches = R::find('ruche', ' rucher_id = :rucher_id', array(':rucher_id' => $rucher_id));
 	}
-	echo "TOTO";
+	
 	if (isset($allRuches))
 	{
 	echo '<table class="table" style="width: 100%;">
@@ -36,8 +36,8 @@ echo '<form id="new_ruche_form' . $rucher_id . '"  style="display: none;">
 	<legend>Ajouter une nouvelle ruche au rucher</legend>
 	<fieldset>
 		<label>Numéro</label><input type="text" name="name" />
-		<input type="hidden" value="' . $rucher_id .'" id="rucher_id" />
-		<button id="create_ruche' .  $rucher_id . '" onclick="createRucheFor(' .  $rucher_id . ')">Creer la ruche</button>
+		<input type="hidden" value="' . $rucher_id .'" name="rucher_id" id="rucher_id" />
+		<button type="button" id="create_ruche' .  $rucher_id . '" onclick="createRucheFor(' .  $rucher_id . ')">Creer la ruche</button>
 		
 	</fieldset>
 </form>

@@ -58,7 +58,7 @@
 		$contact->comment = $data['comment'];
 		
 		$id = R::store($contact);
-		echo "LAAAAA";	
+		
 		SendContactMail($contact);
 
 		if ($id != null)
@@ -71,41 +71,34 @@
 	
 	function SendContactMail($contact)
 	{
-		echo "LA encore";
-		$from = $contact->email;
-		$to = "benoit.alessandroni@gmail.com";
+		$from    = $contact->email;
+		$to      = "postmaster@didapi.fr";
 		$subject = "Contact";
-		$body = $contact->comment;
-		echo "la la ";
-		$host     = "stmp.didapi.fr";
+		$body    = $contact->comment;
+		
+		$host     = "smtp.didapi.fr";
 		$username = "postmaster@didapi.fr";
 		$password = "8puMfhR3";
-		echo "la aussi";
-		$headers = array('From' => $from,
+		$headers  = array('From' => $from,
 				'To' => $to,
 				'Subject' => $subject);
-		echo "headers bien forme";
+		
 		$smtp = Mail::factory('smtp',
 				array(
 					'host' => $host,
-					'port' => '465',
+					'port' => '25',
 					'auth' => true,
 					'username' => $username,
 					'password' => $password
 				)
 			);
 		
-		echo "mail bien forme";
-		
 		$mail = $smtp->send($to, $headers, $body);
-		echo "mail envoye";
-
+		
 		if (PEAR::isError($mail)) {
-			echo "HERE";
 			echo ("<p>" . $mail->getMessage() . "</p>");
 		} else {
 			echo ("<p>Message successfully sent</p>");
 		}
-		echo "mail en erreyr";
 	}
 ?>

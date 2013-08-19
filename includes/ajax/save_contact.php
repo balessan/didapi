@@ -1,5 +1,6 @@
 <?php
-	require_once('Mail.php');	
+	require_once('Mail.php');
+	include_once('../../globals.php');	
 	require('../../library/RedBeanORM/rb.php');
 	
 	$response = array();
@@ -47,8 +48,7 @@
 	{
 		$success = false;
 		
-		R::setup('mysql:host=localhost;
-			dbname=didapi','root','');
+		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 		
 		$contact = R::dispense('contact');
 		$contact->name = $data['name'];

@@ -1,5 +1,6 @@
 <?php
 	include_once('../../class/user.php');
+	include_once('../../globals.php');
 	
 	if (!isset($_SESSION)) { session_start(); }
 	
@@ -24,8 +25,7 @@
 	{
 		$success = false;
 		
-		R::setup('mysql:host=localhost;
-			dbname=didapi','root','');
+		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 			
 		//echo hash('sha256', $_POST['password']);
 		

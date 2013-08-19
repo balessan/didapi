@@ -1,5 +1,6 @@
 <?php
-		
+	include_once('../../globals.php');
+			
 	require_once('../../library/RedBeanORM/rb.php');
 	$response = array();
 	
@@ -42,8 +43,7 @@
 	{
 		$success = false;
 
-		R::setup('mysql:host=localhost;
-			dbname=didapi','root','');
+		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 		
 		$ruche = R::dispense('ruche');
 		$ruche->name = $data['name'];

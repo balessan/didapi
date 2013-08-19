@@ -11,6 +11,7 @@
 	<body>
 		
 		<?php if (!isset($_SESSION)) { session_start(); } ?>
+		<?php include_once('./globals.php'); ?>	
 		
 		<div id="header">
 			<script src="./includes/js/jquery-1.9.1.min.js"></script>
@@ -36,10 +37,10 @@
 								?>
 							</p>	
 							<ul class="nav">
-							  <li><a href="/didapi/index.php"><i class="icon-home icon-white"></i> Accueil</a></li>
-							  <li><a href="/didapi/about.php"><i class="icon-file icon-white"></i> A propos</a></li>
-							  <li><a href="/didapi/contact.php"><i class="icon-pencil icon icon-white"></i> Contact</a></li>
-							  <li><a href="/didapi/products.php"><i class="icon-book icon- icon-white"></i> Produits</a></li>
+							  <li><a href="./index.php"><i class="icon-home icon-white"></i> Accueil</a></li>
+							  <li><a href="./about.php"><i class="icon-file icon-white"></i> A propos</a></li>
+							  <li><a href="./contact.php"><i class="icon-pencil icon icon-white"></i> Contact</a></li>
+							  <li><a href="./products.php"><i class="icon-book icon- icon-white"></i> Produits</a></li>
 							</ul>
 						</div>
 					</div>
@@ -50,7 +51,7 @@
 				<!-- Carousel items -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="/didapi/includes/img/index_didapi_300.jpg">
+						<img src="./includes/img/index_didapi_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1><?php echo utf8_decode("Levée de cadres") ?></h1>
@@ -59,7 +60,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="/didapi/includes/img/menu_main_300.jpg">
+						<img src="./includes/img/menu_main_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1>Un de nos ruchers</h1>
@@ -68,7 +69,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="/didapi/includes/img/menu_onions_300.jpg">
+						<img src="./includes/img/menu_onions_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1><?php echo utf8_decode("Champ d'oignons") ?></h1>

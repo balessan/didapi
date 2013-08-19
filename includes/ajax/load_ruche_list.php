@@ -1,8 +1,8 @@
 <?php
 	require_once('../../library/RedBeanORM/rb.php');
-	
-	R::setup('mysql:host=localhost;
-			dbname=didapi','root','');
+	include_once('../../globals.php');
+			
+	R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 	
 	$rucher_id = $_GET["rucher_id"];
 	$allRuches = 0;

@@ -1,6 +1,6 @@
 <?php include("header.php") ?>
 
-<script src="/didapi/library/OpenLayers/OpenLayers.js"></script>
+<script src="./library/OpenLayers/OpenLayers.js"></script>
 <style type="text/css">
 	img 
 	{ 

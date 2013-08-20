@@ -1,10 +1,10 @@
 <?php include("header.php") ?>
 
 <div class="container marketing">
-	<div class="row">
-		
+	<div class="row">	
 		<div class="content-wrapper">
 			<div class="span4">
+				<img class="img-circle" src="./includes/img/header_right.jpg" />
 				<?php echo utf8_decode('<h2 id="actu">Actualités</h2>'); ?>
 				<p class="section-header">
 					<?php echo utf8_decode("Toutes les actualités de la vie des colonies de l\'apiculteur de Saint-Florent, c\'est par ici !"); ?>
@@ -15,6 +15,7 @@
 			</div>
 			
 			<div class="span4">
+				<img class="img-circle" src="./includes/img/pot/acacia_min.JPG" />
 				<h2 id="products">Nos produits</h2>
 				<p class="section-header">
 					<?php echo utf8_decode("Pour plus d'informations sur nos produits, c'est par là !"); ?> 
@@ -25,6 +26,7 @@
 			</div>
 			
 			<div class="span4">
+				<img class="img-circle" src="./includes/img/cadre_min.jpg" />
 				<h2 id="about">A propos</h2>
 				<p class="section-header">
 					<?php echo utf8_decode("Pour plus d'informations sur le parcours de Didier en apiculture, cette section y est dédié."); ?>

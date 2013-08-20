@@ -50,6 +50,8 @@
 				<h2 id="classics">Miels classiques</h2>
 
 				<div id="printemps" class="span3 products">
+					
+					<img class="img-circle" src="./includes/img/pot/acacia_min.JPG" />
 					<h3>Printemps</h3>
 					<p class="products-resume">
 						Le best-seller ! Le miel souvent présenté sous l'appelation "Miel du Gatînais", constitué majoritairement de Colza...
@@ -59,6 +61,7 @@
 				</div>
 				
 				<div id="foret" class="span3 products">
+					<img class="img-circle" src="./includes/img/pot/foret_min.JPG" />
 					<h3>Forêt</h3>
 					<p class="products-resume">
 						Un miel légèrement amer et plus fort en goût, pour ceux qui aiment les produits forts, ou les curieux !
@@ -69,6 +72,7 @@
 				</div>
 			
 				<div id="fleurs" class="span3 products">
+					<img class="img-circle" src="./includes/img/pot/fleurs_min.JPG" />
 					<h3>Toutes fleurs</h3>
 					<p class="products-resume">
 						Le miel le plus consommé à l'échelle de la planête. Un mélange de goût et d'odeurs, et une texture plus facile à tartiner...
@@ -93,6 +97,7 @@
 				</div>-->
 				
 				<div id="chataigner" class="span3 products">
+					<img class="img-rounded" src="./includes/img/pot/chataigner_min.JPG" />
 					<h3>Chataigner</h3>
 					<p class="products-resume">
 						Le miel le plus amer de la gamme. A réserver aux habitués des sensations fortes...
@@ -103,6 +108,7 @@
 				</div>
 				
 				<div id="sarrasin" class="span3 products">
+					<img class="img-rounded" src="./includes/img/pot/sarrasin_min.JPG" />
 					<h3>Sarrasin</h3>
 					<p class="products-resume">
 						Mon (le webmaster) préféré ! Le miel le plus fort en goût, très lourd et très crémeux par sa cristallisation rapide...
@@ -113,6 +119,7 @@
 				</div>
 				
 				<div id="acacia" class="span3 products">
+					<img class="img-rounded" src="./includes/img/pot/acacia_min.JPG" />
 					<h3>Acacia</h3>
 					<p class="products-resume">
 						Le second bestseller ! Et le miel naturellement le plus sucré et le plus doux... Très bon en cas de mal de gorge, dans les thés ou sur la tartine !
@@ -125,9 +132,10 @@
 			
 			<div class="row-fluid">
 				<h2 id="produits">Produits de la ruche</h2>
-				<div id="gelee" class="span4 products">
+				<div id="epices" class="span3 products">
+					<img class="img-circle" src="" />
 					<h3>Pain d'epices</h3>
-					<p>
+					<p class="products-resume">
 						Le premier produit dérivé de la production de miel, le pain d'épices ! Un régal pour les papilles au goûter, ou à tout heure de la journée ! 
 					</p>
 					<p>

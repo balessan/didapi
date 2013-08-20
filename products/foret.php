@@ -11,7 +11,7 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span3" style="padding-top: 15px;">
-				<img src="/link/to/foret" alt="/link/to/foret" width="200">
+				<img src="../includes/img/pot/foret.JPG" alt="Nos pots de miel de foret" width="200">
 			</div>
 			
 			<div class="span9">

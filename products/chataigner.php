@@ -11,7 +11,7 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span3" style="padding-top: 15px;">
-				<img src="/link/to/chataigners" alt="/link/to/chataigners" width="200">
+				<img src="../includes/img/pot/chataigner.JPG" alt="Nos pots de miel de chataigner" width="200" class="img-rounded" />
 			</div>
 			
 			<div class="span9">

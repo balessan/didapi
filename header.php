@@ -1,23 +1,24 @@
+<?php include_once('./globals.php'); ?>	
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Didier Alessandroni - Apiculteur</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
-		<link href="./includes/css/bootstrap.min.css" rel="stylesheet">
-		<link href="./includes/css/bootstrap-responsive.min.css" rel="stylesheet">
-		<link href="./includes/css/base.css" rel="stylesheet">
+		<link href="<?php echo $include_path; ?>includes/css/bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo $include_path; ?>includes/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="<?php echo $include_path; ?>includes/css/base.css" rel="stylesheet">
 	</head>
 	<body>
 		
 		<?php if (!isset($_SESSION)) { session_start(); } ?>
-		<?php include_once('./globals.php'); ?>	
 		
 		<div id="header">
-			<script src="./includes/js/jquery-1.9.1.min.js"></script>
-			<script src="./includes/js/bootstrap.min.js"></script>
-			<script src="./includes/js/base.js"></script>
-			<script src="./library/ckeditor/ckeditor.js"></script>
+			<script src="<?php echo $include_path; ?>includes/js/jquery-1.9.1.min.js"></script>
+			<script src="<?php echo $include_path; ?>includes/js/bootstrap.min.js"></script>
+			<script src="<?php echo $include_path; ?>includes/js/base.js"></script>
+			<script src="<?php echo $include_path; ?>library/ckeditor/ckeditor.js"></script>
 			
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
@@ -28,12 +29,12 @@
 							<?php 
 									if (isset($_SESSION['username']))
 									{
-										echo '<a href="/didapi/profile.php" class="navbar-link">';
+										echo '<a href="' . $include_path . 'profile.php" class="navbar-link">';
 										echo utf8_decode("Connecté en tant que");
 										echo utf8_decode($_SESSION['username']);
 										echo '</a>';
 									}      
-									else echo utf8_decode('<a href="./login.php">Non connecté</a>');
+									else echo utf8_decode('<a href="' . $include_path . 'login.php">Non connecté</a>');
 								?>
 							</p>	
 							<ul class="nav">
@@ -51,7 +52,7 @@
 				<!-- Carousel items -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="./includes/img/index_didapi_300.jpg">
+						<img src="<?php echo $include_path; ?>includes/img/index_didapi_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1><?php echo utf8_decode("Levée de cadres") ?></h1>
@@ -60,7 +61,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="./includes/img/menu_main_300.jpg">
+						<img src="<?php echo $include_path; ?>includes/img/menu_main_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1>Un de nos ruchers</h1>
@@ -69,7 +70,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="./includes/img/menu_onions_300.jpg">
+						<img src="<?php echo $include_path; ?>includes/img/menu_onions_300.jpg">
 						<div class="container">
 							<div class="carousel-caption">
 								<h1><?php echo utf8_decode("Champ d'oignons") ?></h1>

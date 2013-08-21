@@ -97,7 +97,7 @@
 				</div>-->
 				
 				<div id="chataigner" class="span3 products">
-					<img class="img-rounded" src="./includes/img/pot/chataigner_min.JPG" />
+					<img class="img-circle" src="./includes/img/pot/chataigner_min.JPG" />
 					<h3>Chataigner</h3>
 					<p class="products-resume">
 						Le miel le plus amer de la gamme. A réserver aux habitués des sensations fortes...
@@ -108,7 +108,7 @@
 				</div>
 				
 				<div id="sarrasin" class="span3 products">
-					<img class="img-rounded" src="./includes/img/pot/sarrasin_min.JPG" />
+					<img class="img-circle" src="./includes/img/pot/sarrasin_min.JPG" />
 					<h3>Sarrasin</h3>
 					<p class="products-resume">
 						Mon (le webmaster) préféré ! Le miel le plus fort en goût, très lourd et très crémeux par sa cristallisation rapide...
@@ -119,7 +119,7 @@
 				</div>
 				
 				<div id="acacia" class="span3 products">
-					<img class="img-rounded" src="./includes/img/pot/acacia_min.JPG" />
+					<img class="img-circle" src="./includes/img/pot/acacia_min.JPG" />
 					<h3>Acacia</h3>
 					<p class="products-resume">
 						Le second bestseller ! Et le miel naturellement le plus sucré et le plus doux... Très bon en cas de mal de gorge, dans les thés ou sur la tartine !

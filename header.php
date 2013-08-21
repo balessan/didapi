@@ -38,10 +38,10 @@
 								?>
 							</p>	
 							<ul class="nav">
-							  <li><a href="./index.php"><i class="icon-home icon-white"></i> Accueil</a></li>
-							  <li><a href="./about.php"><i class="icon-file icon-white"></i> A propos</a></li>
-							  <li><a href="./contact.php"><i class="icon-pencil icon icon-white"></i> Contact</a></li>
-							  <li><a href="./products.php"><i class="icon-book icon- icon-white"></i> Produits</a></li>
+							  <li><a href="<?php echo $include_path; ?>index.php"><i class="icon-home icon-white"></i> Accueil</a></li>
+							  <li><a href="<?php echo $include_path; ?>about.php"><i class="icon-file icon-white"></i> A propos</a></li>
+							  <li><a href="<?php echo $include_path; ?>contact.php"><i class="icon-pencil icon icon-white"></i> Contact</a></li>
+							  <li><a href="<?php echo $include_path; ?>products.php"><i class="icon-book icon- icon-white"></i> Produits</a></li>
 							</ul>
 						</div>
 					</div>

@@ -24,8 +24,8 @@
 	  // always return true if you save the contact data ok or false if it fails
 	  $response['status'] = saveContact($data) ? 'success' : 'error';
 	  $response['message'] = $response['status']
-		  ? 'Votre message a bien ete sauvegarde!'
-		  : 'Il y a eu un probleme lors de la sauvegarde du message.';
+		  ? utf8_decode('Votre message a bien été sauvegardé!')
+		  : utf8_decode('Il y a eu un problème lors de la sauvegarde du message.');
 
 	  header('Content-type: application/json');
 	  echo json_encode($response);
@@ -51,11 +51,11 @@
 		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 		
 		$contact = R::dispense('contact');
-		$contact->name = $data['name'];
-		$contact->firstname = $data['firstname'];
-		$contact->email = $data['email'];
+		$contact->name = utf8_encode($data['name']);
+		$contact->firstname = utf8_encode($data['firstname']);
+		$contact->email = utf8_encode($data['email']);
 		$contact->phone = $data['phone'];
-		$contact->comment = $data['comment'];
+		$contact->comment = utf8_encode($data['comment']);
 		
 		$id = R::store($contact);
 		

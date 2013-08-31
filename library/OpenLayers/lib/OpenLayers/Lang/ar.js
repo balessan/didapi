@@ -9,24 +9,24 @@
 
 /**
  * Namespace: OpenLayers.Lang["ar"]
- * Dictionary for العربية.  Keys for entries are used in calls to
+ * Dictionary for ÃÂÃÂ§ÃÂÃÂÃÂÃÂ¹ÃÂÃÂ±ÃÂÃÂ¨ÃÂÃÂÃÂÃÂ©.  Keys for entries are used in calls to
  *     <OpenLayers.Lang.translate>.  Entry bodies are normal strings or
  *     strings formatted for use with <OpenLayers.String.format> calls.
  */
 OpenLayers.Lang["ar"] = OpenLayers.Util.applyDefaults({
 
-    'Permalink': "وصلة دائمة",
+    'Permalink': "ÃÂÃÂÃÂÃÂµÃÂÃÂÃÂÃÂ© ÃÂÃÂ¯ÃÂÃÂ§ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ©",
 
-    'Base Layer': "الطبقة الاساسية",
+    'Base Layer': "ÃÂÃÂ§ÃÂÃÂÃÂÃÂ·ÃÂÃÂ¨ÃÂÃÂÃÂÃÂ© ÃÂÃÂ§ÃÂÃÂÃÂÃÂ§ÃÂÃÂ³ÃÂÃÂ§ÃÂÃÂ³ÃÂÃÂÃÂÃÂ©",
 
-    'Scale = 1 : ${scaleDenom}': "النسبة = 1 : ${scaleDenom}",
+    'Scale = 1 : ${scaleDenom}': "ÃÂÃÂ§ÃÂÃÂÃÂÃÂÃÂÃÂ³ÃÂÃÂ¨ÃÂÃÂ© = 1 : ${scaleDenom}",
 
-    'W': "غ",
+    'W': "ÃÂÃÂº",
 
-    'E': "شر",
+    'E': "ÃÂÃÂ´ÃÂÃÂ±",
 
-    'N': "شم",
+    'N': "ÃÂÃÂ´ÃÂÃÂ",
 
-    'S': "ج"
+    'S': "ÃÂÃÂ¬"
 
 });

@@ -66,7 +66,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 		<h4><?php _e( 'Introducing Twenty Twelve' ); ?></h4>
 		<p><?php _e( 'The newest default theme for WordPress is simple, flexible, and elegant.' ); ?></p>
 		<p><?php _e( 'What makes it really shine are the design details, like the gorgeous Open Sans typeface and a fully responsive design that looks great on any device.' ); ?></p>
-		<p><?php _e( 'Naturally, Twenty Twelve supports all the theme features you’ve come to know and love, but it is also designed to be as great for a website as it is for a blog.' ); ?></p>
+		<p><?php _e( 'Naturally, Twenty Twelve supports all the theme features youÃÂ¢ÃÂÃÂve come to know and love, but it is also designed to be as great for a website as it is for a blog.' ); ?></p>
 	</div>
 </div>
 

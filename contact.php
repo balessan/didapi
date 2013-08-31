@@ -22,9 +22,9 @@
 			<fieldset>
 				<legend>Veuillez utiliser le formulaire suivant pour nous contacter</legend>
 				<label>Nom</label><input type="text" name="name" id="name" placeholder="Votre nom" />
-				<label>PrÈnom</label><input type="text" name="firstname" id="firstname" placeholder="Votre prÈnom" />
+				<label>Pr√©nom</label><input type="text" name="firstname" id="firstname" placeholder="Votre pr√©nom" />
 				<label>Courriel</label><input type="email" name="email" id="email" placeholder="Votre adresse courriel" />
-				<label>Tel</label><input type="tel" name="phone" id="phone" placeholder="Votre numÈro de tÈl" />
+				<label>T√©l</label><input type="tel" name="phone" id="phone" placeholder="Votre num√©ro de t√©l" />
 				<label>Commentaires</label><textarea name="comment" id="comment" rows="10" cols="40" style="width:50%;" placeholder="Vos commentaires"></textarea><br>
 				<input id="add_contact_submit" type="submit" name="submit" class="button"/>	
 			</fieldset>
@@ -47,7 +47,7 @@
 				</p>
 				
 				<p>
-					<label>TÈl:</label>         02 38 36 38 92<br>
+					<label>T√©l√©phone:</label>         02 38 36 38 92<br>
 				</p>
 				
 				<p>
@@ -123,8 +123,6 @@
 				);
 			
 			stMap.setCenter(center, 6);
-			
-			//map.zoomToMaxExtent();
 		}
 	</script>
 </div>

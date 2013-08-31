@@ -3,7 +3,7 @@
 
 		settings : {
 			strip : /<[a-zA-Z\/][^<>]*>/g, // strip HTML tags
-			clean : /[0-9.(),;:!?%#$¿'"_+=\\/-]+/g, // regexp to remove punctuation, etc.
+			clean : /[0-9.(),;:!?%#$ÃÂÃÂ¿'"_+=\\/-]+/g, // regexp to remove punctuation, etc.
 			w : /\S\s+/g, // word-counting regexp
 			c : /\S/g // char-counting regexp for asian languages
 		},

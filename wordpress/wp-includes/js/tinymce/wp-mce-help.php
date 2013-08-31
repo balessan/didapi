@@ -2,7 +2,7 @@
 /**
  * @package TinyMCE
  * @author Moxiecode
- * @copyright Copyright © 2005-2006, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright ÃÂÃÂ© 2005-2006, Moxiecode Systems AB, All rights reserved.
  */
 
 /** @ignore */

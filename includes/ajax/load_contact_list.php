@@ -10,9 +10,9 @@
 <table class="table" style="width: 70%;">
 	<thead>
 		<th>Nom</th>
-		<th>Prénom</th>
+		<th><?php echo utf8_decode('PrÃ©nom'); ?></th>
 		<th>Courriel</th>
-		<th>Tél</th>
+		<th><?php echo utf8_decode('TÃ©lÃ©phone'); ?></th>
 		<th>Commentaire</th>
 	</thead>
 	<tbody>

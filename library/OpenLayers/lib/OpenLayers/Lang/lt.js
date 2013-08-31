@@ -10,7 +10,7 @@
  */
 OpenLayers.Lang['lt'] = OpenLayers.Util.applyDefaults({
 
-    'unhandledRequest': "Neapdorota užklausa gražino ${statusText}",
+    'unhandledRequest': "Neapdorota uÃÂÃÂ¾klausa graÃÂÃÂ¾ino ${statusText}",
 
     'Permalink': "Pastovi nuoroda",
 
@@ -21,25 +21,25 @@ OpenLayers.Lang['lt'] = OpenLayers.Util.applyDefaults({
     'noFID': "Negaliu atnaujinti objekto, kuris neturi FID.",
 
     'browserNotSupported':
-	"Jūsų naršyklė nemoka parodyti vektorių. Šiuo metu galima naudotis tokiais rodymo varikliais:\n{renderers}",
+	"JÃÂÃÂ«sÃÂÃÂ³ narÃÂÃÂ¡yklÃÂÃÂ nemoka parodyti vektoriÃÂÃÂ³. ÃÂÃÂ iuo metu galima naudotis tokiais rodymo varikliais:\n{renderers}",
 
     'commitSuccess': "WFS Tranzakcija: PAVYKO ${response}",
 
-    'commitFailed': "WFS Tranzakcija: ŽLUGO ${response}",
+    'commitFailed': "WFS Tranzakcija: ÃÂÃÂ½LUGO ${response}",
 
     'Scale = 1 : ${scaleDenom}': "Mastelis = 1 : ${scaleDenom}",
     
     //labels for the graticule control
     'W': 'V',
     'E': 'R',
-    'N': 'Š',
+    'N': 'ÃÂÃÂ ',
     'S': 'P',
     'Graticule': 'Tinklelis',
 
     // console message
     'methodDeprecated':
-	"Šis metodas yra pasenęs ir 3.0 versijoje bus pašalintas. " +
-	"Prašome naudoti ${newMethod}.",
+	"ÃÂÃÂ is metodas yra pasenÃÂÃÂs ir 3.0 versijoje bus paÃÂÃÂ¡alintas. " +
+	"PraÃÂÃÂ¡ome naudoti ${newMethod}.",
 
     // **** end ****
     'end': ''

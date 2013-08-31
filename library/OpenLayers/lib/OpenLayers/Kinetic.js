@@ -19,7 +19,7 @@ OpenLayers.Kinetic = OpenLayers.Class({
 
     /**
      * Property: deceleration
-     * {Float} the deseleration in px/ms², default to 0.0035.
+     * {Float} the deseleration in px/msÃÂÃÂ², default to 0.0035.
      */
     deceleration: 0.0035,
 

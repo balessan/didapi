@@ -7897,7 +7897,7 @@ OpenLayers.Geometry.LineString = OpenLayers.Class(OpenLayers.Geometry.Curve, {
              */
             var perpendicularDistance = function(point1, point2, point){
                 //Area = |(1/2)(x1y2 + x2y3 + x3y1 - x2y1 - x3y2 - x1y3)|   *Area of triangle
-                //Base = v((x1-x2)²+(x1-x2)²)                               *Base of Triangle*
+                //Base = v((x1-x2)ÃÂÃÂ²+(x1-x2)ÃÂÃÂ²)                               *Base of Triangle*
                 //Area = .5*Base*H                                          *Solve for height
                 //Height = Area/.5/Base
     
@@ -35463,7 +35463,7 @@ OpenLayers.Kinetic = OpenLayers.Class({
 
     /**
      * Property: deceleration
-     * {Float} the deseleration in px/ms², default to 0.0035.
+     * {Float} the deseleration in px/msÃÂÃÂ², default to 0.0035.
      */
     deceleration: 0.0035,
 
@@ -40493,7 +40493,7 @@ OpenLayers.Handler.Click = OpenLayers.Class(OpenLayers.Handler, {
  *     double-tapping, tap with two fingers, and pinch zoom).  Create a new 
  *     control with the <OpenLayers.Control.TouchNavigation> constructor.
  *
- * If you’re only targeting touch enabled devices with your mapping application,
+ * If youÃÂ¢ÃÂÃÂre only targeting touch enabled devices with your mapping application,
  *     you can create a map with only a TouchNavigation control. The 
  *     <OpenLayers.Control.Navigation> control is mobile ready by default, but 
  *     you can generate a smaller build of the library by only including this

@@ -59,7 +59,7 @@ jQuery(document).ready(function () {
 		    data: data,
 		    beforeSend: function () {
 	 			// Show temp status
-		        jQuery("#author_comment_url_"+ thisId).html('<span>Re-adding…</span>');
+		        jQuery("#author_comment_url_"+ thisId).html('<span>Re-addingÃÂ¢ÃÂÃÂ¦</span>');
 		    },
 		    success: function (response) {
 		        if (response) {

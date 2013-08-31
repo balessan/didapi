@@ -73,7 +73,7 @@ div.olControlZoomPanel .olControlZoomInItemInactive:after {
     line-height: 1em;
 }
 div.olControlZoomPanel .olControlZoomOutItemInactive:after {
-    content: '–';
+    content: 'ÃÂ¢ÃÂÃÂ';
     line-height: 0.9em;
     padding: 0 8px;
 }

@@ -25,13 +25,13 @@ OpenLayers.Lang.it = {
 
     // console message
     'minZoomLevelError':
-        "La proprietà minZoomLevel è da utilizzare solamente " +
+        "La proprietÃÂÃÂ  minZoomLevel ÃÂÃÂ¨ da utilizzare solamente " +
         "con livelli che abbiano FixedZoomLevels. Il fatto che " +
-        "questo livello wfs controlli la proprietà minZoomLevel è " +
+        "questo livello wfs controlli la proprietÃÂÃÂ  minZoomLevel ÃÂÃÂ¨ " +
         "un retaggio del passato. Non possiamo comunque rimuoverla " +
         "senza rompere le vecchie applicazioni che dipendono su di essa." +
         "Quindi siamo costretti a deprecarla -- minZoomLevel " +
-        "e sarà rimossa dalla vesione 3.0. Si prega di utilizzare i " +
+        "e sarÃÂÃÂ  rimossa dalla vesione 3.0. Si prega di utilizzare i " +
         "settaggi di risoluzione min/max come descritto qui: " +
         "http://trac.openlayers.org/wiki/SettingZoomLevels",
 
@@ -40,22 +40,22 @@ OpenLayers.Lang.it = {
     'commitFailed': "Transazione WFS: FAILED ${response}",
 
     'googleWarning':
-        "Il livello Google non è riuscito a caricare correttamente.<br><br>" +
+        "Il livello Google non ÃÂÃÂ¨ riuscito a caricare correttamente.<br><br>" +
         "Per evitare questo messaggio, seleziona un nuovo BaseLayer " +
         "nel selettore di livelli nell'angolo in alto a destra.<br><br>" +
-        "Più precisamente, ciò accade perchè la libreria Google Maps " +
-        "non è stata inclusa nella pagina, oppure non contiene la " +
+        "PiÃÂÃÂ¹ precisamente, ciÃÂÃÂ² accade perchÃÂÃÂ¨ la libreria Google Maps " +
+        "non ÃÂÃÂ¨ stata inclusa nella pagina, oppure non contiene la " +
         "corretta API key per il tuo sito.<br><br>" +
         "Sviluppatori: Per aiuto su come farlo funzionare correttamente, " +
         "<a href='http://trac.openlayers.org/wiki/Google' " +
         "target='_blank'>clicca qui</a>",
 
     'getLayerWarning':
-        "Il livello ${layerType} non è riuscito a caricare correttamente.<br><br>" +
+        "Il livello ${layerType} non ÃÂÃÂ¨ riuscito a caricare correttamente.<br><br>" +
         "Per evitare questo messaggio, seleziona un nuovo BaseLayer " +
         "nel selettore di livelli nell'angolo in alto a destra.<br><br>" +
-        "Più precisamente, ciò accade perchè la libreria ${layerLib} " +
-        "non è stata inclusa nella pagina.<br><br>" +
+        "PiÃÂÃÂ¹ precisamente, ciÃÂÃÂ² accade perchÃÂÃÂ¨ la libreria ${layerLib} " +
+        "non ÃÂÃÂ¨ stata inclusa nella pagina.<br><br>" +
         "Sviluppatori: Per aiuto su come farlo funzionare correttamente, " +
         "<a href='http://trac.openlayers.org/wiki/${layerLib}' " +
         "target='_blank'>clicca qui</a>",
@@ -65,15 +65,15 @@ OpenLayers.Lang.it = {
     // console message
     'reprojectDeprecated':
         "Stai utilizzando l'opzione 'reproject' sul livello ${layerName}. " +
-        "Questa opzione è deprecata: il suo utilizzo è stato introdotto per" +
+        "Questa opzione ÃÂÃÂ¨ deprecata: il suo utilizzo ÃÂÃÂ¨ stato introdotto per" +
         "supportare il disegno dei dati sopra mappe commerciali, ma tale " + 
-        "funzionalità dovrebbe essere ottenuta tramite l'utilizzo della proiezione " +
+        "funzionalitÃÂÃÂ  dovrebbe essere ottenuta tramite l'utilizzo della proiezione " +
         "Spherical Mercator. Per maggiori informazioni consultare qui " +
         "http://trac.openlayers.org/wiki/SphericalMercator.",
 
     // console message
     'methodDeprecated':
-        "Questo metodo è stato deprecato e sarà rimosso dalla versione 3.0. " +
+        "Questo metodo ÃÂÃÂ¨ stato deprecato e sarÃÂÃÂ  rimosso dalla versione 3.0. " +
         "Si prega di utilizzare il metodo ${newMethod} in alternativa.",
 
     'end': ''

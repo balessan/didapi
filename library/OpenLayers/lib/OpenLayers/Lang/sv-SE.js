@@ -14,32 +14,32 @@
  */
 OpenLayers.Lang["sv"] = OpenLayers.Util.applyDefaults({
 
-    'unhandledRequest': "Ej hanterad fråga retur ${statusText}",
+    'unhandledRequest': "Ej hanterad frÃÂÃÂ¥ga retur ${statusText}",
 
-    'Permalink': "Permalänk",
+    'Permalink': "PermalÃÂÃÂ¤nk",
 
     'Overlays': "Kartlager",
 
     'Base Layer': "Bakgrundskarta",
 
-    'noFID': "Kan ej uppdatera feature (objekt) för vilket FID saknas.",
+    'noFID': "Kan ej uppdatera feature (objekt) fÃÂÃÂ¶r vilket FID saknas.",
 
-    'browserNotSupported': "Din webbläsare stöder inte vektorvisning. För närvarande stöds följande visning:\n${renderers}",
+    'browserNotSupported': "Din webblÃÂÃÂ¤sare stÃÂÃÂ¶der inte vektorvisning. FÃÂÃÂ¶r nÃÂÃÂ¤rvarande stÃÂÃÂ¶ds fÃÂÃÂ¶ljande visning:\n${renderers}",
 
-    'minZoomLevelError': "Egenskapen minZoomLevel är endast avsedd att användas med lager med FixedZoomLevels. Att detta WFS-lager kontrollerar minZoomLevel är en relik från äldre versioner. Vi kan dock inte ta bort det utan att riskera att OL-baserade tillämpningar som använder detta slutar fungera. Därför är det satt som deprecated, minZoomLevel kommer att tas bort i version 3.0. Använd i stället inställning av min/max resolution som beskrivs här: http://trac.openlayers.org/wiki/SettingZoomLevels",
+    'minZoomLevelError': "Egenskapen minZoomLevel ÃÂÃÂ¤r endast avsedd att anvÃÂÃÂ¤ndas med lager med FixedZoomLevels. Att detta WFS-lager kontrollerar minZoomLevel ÃÂÃÂ¤r en relik frÃÂÃÂ¥n ÃÂÃÂ¤ldre versioner. Vi kan dock inte ta bort det utan att riskera att OL-baserade tillÃÂÃÂ¤mpningar som anvÃÂÃÂ¤nder detta slutar fungera. DÃÂÃÂ¤rfÃÂÃÂ¶r ÃÂÃÂ¤r det satt som deprecated, minZoomLevel kommer att tas bort i version 3.0. AnvÃÂÃÂ¤nd i stÃÂÃÂ¤llet instÃÂÃÂ¤llning av min/max resolution som beskrivs hÃÂÃÂ¤r: http://trac.openlayers.org/wiki/SettingZoomLevels",
 
     'commitSuccess': "WFS-transaktion: LYCKADES ${response}",
 
     'commitFailed': "WFS-transaktion: MISSLYCKADES ${response}",
 
-    'googleWarning': "Google-lagret kunde inte laddas korrekt.\x3cbr\x3e\x3cbr\x3eFör att slippa detta meddelande, välj en annan bakgrundskarta i lagerväljaren i övre högra hörnet.\x3cbr\x3e\x3cbr\x3eSannolikt beror felet på att Google Maps-biblioteket inte är inkluderat på webbsidan eller på att sidan inte anger korrekt API-nyckel för webbplatsen.\x3cbr\x3e\x3cbr\x3eUtvecklare: hjälp för att åtgärda detta, \x3ca href=\'http://trac.openlayers.org/wiki/Google\' target=\'_blank\'\x3eklicka här\x3c/a\x3e.",
+    'googleWarning': "Google-lagret kunde inte laddas korrekt.\x3cbr\x3e\x3cbr\x3eFÃÂÃÂ¶r att slippa detta meddelande, vÃÂÃÂ¤lj en annan bakgrundskarta i lagervÃÂÃÂ¤ljaren i ÃÂÃÂ¶vre hÃÂÃÂ¶gra hÃÂÃÂ¶rnet.\x3cbr\x3e\x3cbr\x3eSannolikt beror felet pÃÂÃÂ¥ att Google Maps-biblioteket inte ÃÂÃÂ¤r inkluderat pÃÂÃÂ¥ webbsidan eller pÃÂÃÂ¥ att sidan inte anger korrekt API-nyckel fÃÂÃÂ¶r webbplatsen.\x3cbr\x3e\x3cbr\x3eUtvecklare: hjÃÂÃÂ¤lp fÃÂÃÂ¶r att ÃÂÃÂ¥tgÃÂÃÂ¤rda detta, \x3ca href=\'http://trac.openlayers.org/wiki/Google\' target=\'_blank\'\x3eklicka hÃÂÃÂ¤r\x3c/a\x3e.",
 
-    'getLayerWarning': "${layerType}-lagret kunde inte laddas korrekt.\x3cbr\x3e\x3cbr\x3eFör att slippa detta meddelande, välj en annan bakgrundskarta i lagerväljaren i övre högra hörnet.\x3cbr\x3e\x3cbr\x3eSannolikt beror felet på att ${layerLib}-biblioteket inte är inkluderat på webbsidan.\x3cbr\x3e\x3cbr\x3eUtvecklare: hjälp för att åtgärda detta, \x3ca href=\'http://trac.openlayers.org/wiki/${layerLib}\' target=\'_blank\'\x3eklicka här\x3c/a\x3e.",
+    'getLayerWarning': "${layerType}-lagret kunde inte laddas korrekt.\x3cbr\x3e\x3cbr\x3eFÃÂÃÂ¶r att slippa detta meddelande, vÃÂÃÂ¤lj en annan bakgrundskarta i lagervÃÂÃÂ¤ljaren i ÃÂÃÂ¶vre hÃÂÃÂ¶gra hÃÂÃÂ¶rnet.\x3cbr\x3e\x3cbr\x3eSannolikt beror felet pÃÂÃÂ¥ att ${layerLib}-biblioteket inte ÃÂÃÂ¤r inkluderat pÃÂÃÂ¥ webbsidan.\x3cbr\x3e\x3cbr\x3eUtvecklare: hjÃÂÃÂ¤lp fÃÂÃÂ¶r att ÃÂÃÂ¥tgÃÂÃÂ¤rda detta, \x3ca href=\'http://trac.openlayers.org/wiki/${layerLib}\' target=\'_blank\'\x3eklicka hÃÂÃÂ¤r\x3c/a\x3e.",
 
     'Scale = 1 : ${scaleDenom}': "\x3cstrong\x3eSkala\x3c/strong\x3e 1 : ${scaleDenom}",
 
-    'reprojectDeprecated': "Du använder inställningen \'reproject\' på lagret ${layerName}. Denna inställning markerad som deprecated: den var avsedd att användas för att stödja visning av kartdata på kommersiella bakgrundskartor, men nu bör man i stället använda Spherical Mercator-stöd för den funktionaliteten. Mer information finns på http://trac.openlayers.org/wiki/SphericalMercator.",
+    'reprojectDeprecated': "Du anvÃÂÃÂ¤nder instÃÂÃÂ¤llningen \'reproject\' pÃÂÃÂ¥ lagret ${layerName}. Denna instÃÂÃÂ¤llning markerad som deprecated: den var avsedd att anvÃÂÃÂ¤ndas fÃÂÃÂ¶r att stÃÂÃÂ¶dja visning av kartdata pÃÂÃÂ¥ kommersiella bakgrundskartor, men nu bÃÂÃÂ¶r man i stÃÂÃÂ¤llet anvÃÂÃÂ¤nda Spherical Mercator-stÃÂÃÂ¶d fÃÂÃÂ¶r den funktionaliteten. Mer information finns pÃÂÃÂ¥ http://trac.openlayers.org/wiki/SphericalMercator.",
 
-    'methodDeprecated': "Denna metod är markerad som deprecated och kommer att tas bort i 3.0. Använd ${newMethod} i stället."
+    'methodDeprecated': "Denna metod ÃÂÃÂ¤r markerad som deprecated och kommer att tas bort i 3.0. AnvÃÂÃÂ¤nd ${newMethod} i stÃÂÃÂ¤llet."
 
 });

@@ -10,9 +10,9 @@
  */
 OpenLayers.Lang.ca = {
 
-    'unhandledRequest': "Resposta a petició no gestionada ${statusText}",
+    'unhandledRequest': "Resposta a peticiÃÂÃÂ³ no gestionada ${statusText}",
 
-    'Permalink': "Enllaç permanent",
+    'Permalink': "EnllaÃÂÃÂ§ permanent",
 
     'Overlays': "Capes addicionals",
 
@@ -21,44 +21,44 @@ OpenLayers.Lang.ca = {
     'noFID': "No es pot actualitzar un element per al que no existeix FID.",
 
     'browserNotSupported':
-        "El seu navegador no suporta renderització vectorial. Els renderitzadors suportats actualment són:\n${renderers}",
+        "El seu navegador no suporta renderitzaciÃÂÃÂ³ vectorial. Els renderitzadors suportats actualment sÃÂÃÂ³n:\n${renderers}",
 
     // console message
     'minZoomLevelError':
-        "La propietat minZoomLevel s'ha d'utilitzar només " +
+        "La propietat minZoomLevel s'ha d'utilitzar nomÃÂÃÂ©s " +
         "amb les capes que tenen FixedZoomLevels. El fet que " +
-        "una capa wfs comprovi minZoomLevel és una relíquia del " +
-        "passat. No podem, però, eliminar-la sense trencar " +
+        "una capa wfs comprovi minZoomLevel ÃÂÃÂ©s una relÃÂÃÂ­quia del " +
+        "passat. No podem, perÃÂÃÂ², eliminar-la sense trencar " +
         "les aplicacions d'OpenLayers que en puguin dependre. " +
-        "Així doncs estem fent-la obsoleta -- la comprovació " +
-        "minZoomLevel s'eliminarà a la versió 3.0. Feu servir " +
-        "els paràmetres min/max resolution en substitució, tal com es descriu aquí: " +
+        "AixÃÂÃÂ­ doncs estem fent-la obsoleta -- la comprovaciÃÂÃÂ³ " +
+        "minZoomLevel s'eliminarÃÂÃÂ  a la versiÃÂÃÂ³ 3.0. Feu servir " +
+        "els parÃÂÃÂ metres min/max resolution en substituciÃÂÃÂ³, tal com es descriu aquÃÂÃÂ­: " +
         "http://trac.openlayers.org/wiki/SettingZoomLevels",
 
-    'commitSuccess': "Transacció WFS: CORRECTA ${response}",
+    'commitSuccess': "TransacciÃÂÃÂ³ WFS: CORRECTA ${response}",
 
-    'commitFailed': "Transacció WFS: HA FALLAT ${response}",
+    'commitFailed': "TransacciÃÂÃÂ³ WFS: HA FALLAT ${response}",
 
     'googleWarning':
         "La capa Google no s'ha pogut carregar correctament.<br><br>" +
         "Per evitar aquest missatge, seleccioneu una nova Capa Base " +
         "al gestor de capes de la cantonada superior dreta.<br><br>" +
-        "Probablement això és degut a que l'script de la biblioteca de " +
-    "Google Maps no ha estat inclòs a la vostra pàgina, o no " +
-    "conté la clau de l'API correcta per a la vostra adreça.<br><br>" +
-        "Desenvolupadors: Per obtenir consells sobre com fer anar això, " +
+        "Probablement aixÃÂÃÂ² ÃÂÃÂ©s degut a que l'script de la biblioteca de " +
+    "Google Maps no ha estat inclÃÂÃÂ²s a la vostra pÃÂÃÂ gina, o no " +
+    "contÃÂÃÂ© la clau de l'API correcta per a la vostra adreÃÂÃÂ§a.<br><br>" +
+        "Desenvolupadors: Per obtenir consells sobre com fer anar aixÃÂÃÂ², " +
         "<a href='http://trac.openlayers.org/wiki/Google' " +
-        "target='_blank'>féu clic aquí</a>",
+        "target='_blank'>fÃÂÃÂ©u clic aquÃÂÃÂ­</a>",
 
     'getLayerWarning':
         "Per evitar aquest missatge, seleccioneu una nova Capa Base " +
         "al gestor de capes de la cantonada superior dreta.<br><br>" +
-        "Probablement això és degut a que l'script de la biblioteca " +
+        "Probablement aixÃÂÃÂ² ÃÂÃÂ©s degut a que l'script de la biblioteca " +
         "${layerLib} " +
-        "no ha estat inclòs a la vostra pàgina.<br><br>" +
-        "Desenvolupadors: Per obtenir consells sobre com fer anar això, " +
+        "no ha estat inclÃÂÃÂ²s a la vostra pÃÂÃÂ gina.<br><br>" +
+        "Desenvolupadors: Per obtenir consells sobre com fer anar aixÃÂÃÂ², " +
         "<a href='http://trac.openlayers.org/wiki/${layerLib}' " +
-        "target='_blank'>féu clic aquí</a>",
+        "target='_blank'>fÃÂÃÂ©u clic aquÃÂÃÂ­</a>",
 
     'Scale = 1 : ${scaleDenom}': "Escala = 1 : ${scaleDenom}",
 
@@ -67,21 +67,21 @@ OpenLayers.Lang.ca = {
     'E': 'E',
     'N': 'N',
     'S': 'S',
-    'Graticule': 'Retícula',    
+    'Graticule': 'RetÃÂÃÂ­cula',    
         
     // console message
     'reprojectDeprecated':
-        "Esteu fent servir l'opció 'reproject' a la capa " +
-        "${layerName}. Aquesta opció és obsoleta: el seu ús fou concebut " +
-        "per suportar la visualització de dades sobre mapes base comercials, " + 
-        "però ara aquesta funcionalitat s'hauria d'assolir mitjançant el suport " +
-        "de la projecció Spherical Mercator. Més informació disponible a " +
+        "Esteu fent servir l'opciÃÂÃÂ³ 'reproject' a la capa " +
+        "${layerName}. Aquesta opciÃÂÃÂ³ ÃÂÃÂ©s obsoleta: el seu ÃÂÃÂºs fou concebut " +
+        "per suportar la visualitzaciÃÂÃÂ³ de dades sobre mapes base comercials, " + 
+        "perÃÂÃÂ² ara aquesta funcionalitat s'hauria d'assolir mitjanÃÂÃÂ§ant el suport " +
+        "de la projecciÃÂÃÂ³ Spherical Mercator. MÃÂÃÂ©s informaciÃÂÃÂ³ disponible a " +
         "http://trac.openlayers.org/wiki/SphericalMercator.",
 
     // console message
     'methodDeprecated':
-        "Aquest mètode és obsolet i s'eliminarà a la versió 3.0. " +
-        "Si us plau feu servir em mètode alternatiu ${newMethod}.",
+        "Aquest mÃÂÃÂ¨tode ÃÂÃÂ©s obsolet i s'eliminarÃÂÃÂ  a la versiÃÂÃÂ³ 3.0. " +
+        "Si us plau feu servir em mÃÂÃÂ¨tode alternatiu ${newMethod}.",
 
     // **** end ****
     'end': ''

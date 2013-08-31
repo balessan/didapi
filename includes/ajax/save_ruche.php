@@ -19,8 +19,8 @@
 	  // always return true if you save the contact data ok or false if it fails
 	  $response['status'] = saveRuche($data) ? 'success' : 'error';
 	  $response['message'] = $response['status']
-		  ? 'La ruche a bien ete cree!'
-		  : 'Il y a eu un probleme lors de la creation de la ruche.';
+		  ? utf8_decode('La ruche a bien été créée!')
+		  : utf8_decode('Il y a eu un problème lors de la création de la ruche.');
 
 	  header('Content-type: application/json');
 	  echo json_encode($response);
@@ -46,7 +46,7 @@
 		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 		
 		$ruche = R::dispense('ruche');
-		$ruche->name = $data['name'];
+		$ruche->name = utf8_encode($data['name']);
 		$ruche_id = R::store($ruche);
 		
 		$rucher = R::load('rucher', $data['rucher_id']);

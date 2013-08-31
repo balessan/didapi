@@ -17,16 +17,15 @@
 		<div id="StFlo" style="height:250px; width:250px;"></div>
 	</div>
 	<div class="span9">
-		<!--<div id="map" style="height:250px;"></div>-->
-		<h1>Présentation</h1>
+		<h2>PrÃ©sentation</h2>
 		<div id="presentation_text">	
-			<p>Didier Alessandroni est apiculteur depuis 2009, suite à une reconversion professionnelle.</p>
-			<p>Passionné de nature, cet ingénieur généraliste de formation a décidé de contribuer, à sa manière, à la conservation de la biodiversité et à la sensibilisation à une alimentation plus saine, mais toute aussi bonne !</p>
-			<p>Il s’est pris d’affection pour les abeilles et a pour souhait d’aider à préserver cet insecte, essentiel à l’équilibre de la terre et des hommes.</p>
-			<p>Installé dans le Loiret (région Centre), il a débuté, en 2009, avec une dizaine de ruches qui lui ont permis de produire ses premiers kilos de miel.</p>
-			<p>2011 a vu le cheptel s’étendre à près d’une centaine de ruches et notre apiculteur retourner en formation théorique et pratique.</p> 
-			<p>2012 et 2013 ont mené à une consolidation du cheptel, portant celui-ci à près de 150 ruches, répartis entre 5 ruchers.<p>
-			<p>Les premières récoltes arrivent, les pots se remplissent, la dynamique est lancée…</p>
+			<p>Didier Alessandroni est apiculteur depuis 2009, suite Ã  une reconversion professionnelle.</p>
+			<p>PassionnÃ© de nature, cet ingÃ©nieur gÃ©nÃ©raliste de formation a dÃ©cidÃ© de contribuer, Ã  sa maniÃ¨re, Ã  la conservation de la biodiversitÃ© et Ã  la sensibilisation Ã  une alimentation plus saine, mais toute aussi bonne !</p>
+			<p>Il s'est pris d'affection pour les abeilles et a pour souhait d'aider Ã  prÃ©server cet insecte, essentiel Ã Â l'Ã©quilibre de la terre et des hommes.</p>
+			<p>InstallÃ© dans le Loiret (rÃ©gion Centre), il a dÃ©butÃ©, en 2009, avec une dizaine de ruches qui lui ont permis de produire ses premiers kilos de miel.</p>
+			<p>2011 a vu le cheptel s'Ã©tendre Ã  prÃ¨s d'une centaine de ruches et notre apiculteur retourner en formation thÃ©orique et pratique.</p> 
+			<p>2012 et 2013 ont menÃ© Ã  une consolidation du cheptel, portant celui-ci Ã  prÃ¨s de 150 ruches, rÃ©partis entre 5 ruchers.<p>
+			<p>Les premiÃ¨res rÃ©coltes arrivent, les pots se remplissent, la dynamique est lancÃ© !</p>
 		</div>
 		
 		<div class="contact">
@@ -45,7 +44,7 @@
 				</p>
 				
 				<p>
-					<label>Tél:</label>         02 38 36 38 92<br>
+					<label>TÃ©l:</label>         02 38 36 38 92<br>
 				</p>
 				
 				<p>
@@ -61,6 +60,7 @@
 </div>
 
 <script type="text/javascript">    
+	$(function(){
 		stMap = new OpenLayers.Map( 'StFlo');
 		mapOSMLayer = new OpenLayers.Layer.OSM("Simple OSM Map");
 		stMap.addLayer(mapOSMLayer);
@@ -80,8 +80,8 @@
 			);
 		
 		stMap.setCenter(center, 6);
-		
-		//map.zoomToMaxExtent();
+	});
 </script>
 
-<?php include("footer.php") ?>
+<?php include('footer.php'); ?>
+

@@ -10,7 +10,7 @@
  */
 OpenLayers.Lang['da-DK'] = {
 
-    'unhandledRequest': "En ikke håndteret forespørgsel returnerede ${statusText}",
+    'unhandledRequest': "En ikke hÃÂÃÂ¥ndteret forespÃÂÃÂ¸rgsel returnerede ${statusText}",
 
     'Permalink': "Permalink",
 
@@ -21,19 +21,19 @@ OpenLayers.Lang['da-DK'] = {
     'noFID': "Kan ikke opdateret en feature (et objekt) der ikke har et FID.",
 
     'browserNotSupported':
-        "Din browser understøtter ikke vektor visning. Følgende vektor visninger understøttes:\n${renderers}",
+        "Din browser understÃÂÃÂ¸tter ikke vektor visning. FÃÂÃÂ¸lgende vektor visninger understÃÂÃÂ¸ttes:\n${renderers}",
 
     // console message
     'minZoomLevelError':
         "Egenskaben minZoomLevel er kun beregnet til brug " +
         "med FixedZoomLevels. At dette WFS lag kontrollerer " +
         "minZoomLevel egenskaben, er et levn fra en tidligere " +
-        "version. Vi kan desværre ikke fjerne dette uden at risikere " +
-        "at ødelægge eksisterende OL baserede programmer der " +
+        "version. Vi kan desvÃÂÃÂ¦rre ikke fjerne dette uden at risikere " +
+        "at ÃÂÃÂ¸delÃÂÃÂ¦gge eksisterende OL baserede programmer der " +
         " benytter denne funktionalitet. " +
-        "Egenskaben bør derfor ikke anvendes, og minZoomLevel " +
+        "Egenskaben bÃÂÃÂ¸r derfor ikke anvendes, og minZoomLevel " +
         "kontrollen herunder vil blive fjernet i version 3.0. " +
-        "Benyt istedet min/max opløsnings indstillingerne, som " +
+        "Benyt istedet min/max oplÃÂÃÂ¸snings indstillingerne, som " +
         "er beskrevet her: " +
         "http://trac.openlayers.org/wiki/SettingZoomLevels",
 
@@ -42,39 +42,39 @@ OpenLayers.Lang['da-DK'] = {
     'commitFailed': "WFS transaktion: MISLYKKEDES ${response}",
 
     'googleWarning':
-        "Google laget kunne ikke indlæses.<br><br>" +
-        "For at fjerne denne besked, vælg et nyt bagrundskort i " +
-        "lagskifteren i øverste højre hjørne.<br><br>" +
+        "Google laget kunne ikke indlÃÂÃÂ¦ses.<br><br>" +
+        "For at fjerne denne besked, vÃÂÃÂ¦lg et nyt bagrundskort i " +
+        "lagskifteren i ÃÂÃÂ¸verste hÃÂÃÂ¸jre hjÃÂÃÂ¸rne.<br><br>" +
         "Fejlen skyldes formentlig at Google Maps bibliotekts " +
         "scriptet ikke er inkluderet, eller ikke indeholder den " +
-        "korrkte API nøgle for dit site.<br><br>" +
-        "Udviklere: For hjælp til at få dette til at fungere, " +
+        "korrkte API nÃÂÃÂ¸gle for dit site.<br><br>" +
+        "Udviklere: For hjÃÂÃÂ¦lp til at fÃÂÃÂ¥ dette til at fungere, " +
         "<a href='http://trac.openlayers.org/wiki/Google' " +
         "target='_blank'>klik her</a>",
 
     'getLayerWarning':
-        "${layerType}-laget kunne ikke indlæses.<br><br>" +
-        "For at fjerne denne besked, vælg et nyt bagrundskort i " +
-        "lagskifteren i øverste højre hjørne.<br><br>" +
+        "${layerType}-laget kunne ikke indlÃÂÃÂ¦ses.<br><br>" +
+        "For at fjerne denne besked, vÃÂÃÂ¦lg et nyt bagrundskort i " +
+        "lagskifteren i ÃÂÃÂ¸verste hÃÂÃÂ¸jre hjÃÂÃÂ¸rne.<br><br>" +
         "Fejlen skyldes formentlig at ${layerLib} bibliotekts " +
         "scriptet ikke er inkluderet.<br><br>" +
-        "Udviklere: For hjælp til at få dette til at fungere, " +
+        "Udviklere: For hjÃÂÃÂ¦lp til at fÃÂÃÂ¥ dette til at fungere, " +
         "<a href='http://trac.openlayers.org/wiki/${layerLib}' " +
         "target='_blank'>klik her</a>",
 
-    'Scale = 1 : ${scaleDenom}': "Målforhold = 1 : ${scaleDenom}",
+    'Scale = 1 : ${scaleDenom}': "MÃÂÃÂ¥lforhold = 1 : ${scaleDenom}",
 
     // console message
     'reprojectDeprecated':
-        "Du anvender indstillingen 'reproject' på laget ${layerName}." + 
-        "Denne indstilling bør ikke længere anvendes. Den var beregnet " +
-        "til at vise data ovenpå kommercielle grundkort, men den funktionalitet " +
-        "bør nu opnås ved at anvende Spherical Mercator understøttelsen. " +
-        "Mere information er tilgængelig her: " +
+        "Du anvender indstillingen 'reproject' pÃÂÃÂ¥ laget ${layerName}." + 
+        "Denne indstilling bÃÂÃÂ¸r ikke lÃÂÃÂ¦ngere anvendes. Den var beregnet " +
+        "til at vise data ovenpÃÂÃÂ¥ kommercielle grundkort, men den funktionalitet " +
+        "bÃÂÃÂ¸r nu opnÃÂÃÂ¥s ved at anvende Spherical Mercator understÃÂÃÂ¸ttelsen. " +
+        "Mere information er tilgÃÂÃÂ¦ngelig her: " +
         "http://trac.openlayers.org/wiki/SphericalMercator.",
 
     // console message
     'methodDeprecated':
-        "Denne funktion bør ikke længere anvendes, og vil blive fjernet i version 3.0. " +
+        "Denne funktion bÃÂÃÂ¸r ikke lÃÂÃÂ¦ngere anvendes, og vil blive fjernet i version 3.0. " +
         "Anvend venligst funktionen ${newMethod} istedet."
 };

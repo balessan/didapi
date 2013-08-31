@@ -8,7 +8,7 @@
 
 /**
  * Namespace: OpenLayers.Lang["nn"]
- * Dictionary for ‪Norsk (nynorsk)‬.  Keys for entries are used in calls to
+ * Dictionary for ÃÂ¢ÃÂÃÂªNorsk (nynorsk)ÃÂ¢ÃÂÃÂ¬.  Keys for entries are used in calls to
  *     <OpenLayers.Lang.translate>.  Entry bodies are normal strings or
  *     strings formatted for use with <OpenLayers.String.format> calls.
  */

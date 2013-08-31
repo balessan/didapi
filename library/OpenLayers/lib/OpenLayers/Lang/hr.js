@@ -14,7 +14,7 @@
  */
 OpenLayers.Lang["hr"] = OpenLayers.Util.applyDefaults({
 
-    'unhandledRequest': "Nepodržani zahtjev ${statusText}",
+    'unhandledRequest': "NepodrÃÂÃÂ¾ani zahtjev ${statusText}",
 
     'Permalink': "Permalink",
 
@@ -22,16 +22,16 @@ OpenLayers.Lang["hr"] = OpenLayers.Util.applyDefaults({
 
     'Base Layer': "Osnovna karta",
 
-    'noFID': "Ne mogu ažurirati značajku za koju ne postoji FID.",
+    'noFID': "Ne mogu aÃÂÃÂ¾urirati znaÃÂÃÂajku za koju ne postoji FID.",
 
-    'browserNotSupported': "Vaš preglednik ne podržava vektorsko renderiranje. Trenutno podržani rendereri su: ${renderers}",
+    'browserNotSupported': "VaÃÂÃÂ¡ preglednik ne podrÃÂÃÂ¾ava vektorsko renderiranje. Trenutno podrÃÂÃÂ¾ani rendereri su: ${renderers}",
 
-    'commitSuccess': "WFS Transakcija: USPJEŠNA ${response}",
+    'commitSuccess': "WFS Transakcija: USPJEÃÂÃÂ NA ${response}",
 
-    'commitFailed': "WFS Transakcija: NEUSPJEŠNA ${response}",
+    'commitFailed': "WFS Transakcija: NEUSPJEÃÂÃÂ NA ${response}",
 
     'Scale = 1 : ${scaleDenom}': "Mjerilo = 1 : ${scaleDenom}",
 
-    'methodDeprecated': "Ova metoda nije odobrena i biti će maknuta u 3.0. Koristite ${newMethod}."
+    'methodDeprecated': "Ova metoda nije odobrena i biti ÃÂÃÂe maknuta u 3.0. Koristite ${newMethod}."
 
 });

@@ -1,4 +1,4 @@
-﻿function findPrice($value, $textValues)
+function findPrice($value, $textValues)
 {	
 	$result = null;
 	

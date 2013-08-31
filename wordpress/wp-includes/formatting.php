@@ -1939,7 +1939,7 @@ function get_date_from_gmt($string, $format = 'Y-m-d H:i:s') {
  *
  * @since 1.5.0
  *
- * @param string $timezone Either 'Z' for 0 offset or '±hhmm'.
+ * @param string $timezone Either 'Z' for 0 offset or 'ÃÂÃÂ±hhmm'.
  * @return int|float The offset in seconds.
  */
 function iso8601_timezone_to_offset($timezone) {

@@ -1,4 +1,4 @@
-﻿<?php include('../header.php'); ?>
+<?php include('../header.php'); ?>
 
 <div class="row-fluid">
 	<div class="span3">
@@ -7,7 +7,7 @@
 
 	<div class="span9">
 		<div class="row-fluid">
-			<?php echo utf8_decode('<h1>Miel d\'Acacia</h1>'); ?>
+			<h1>Miel d'Acacia</h1>
 		</div>
 		<div class="row-fluid">
 			<div class="span3" style="padding-top: 15px;">
@@ -17,15 +17,16 @@
 			<div class="span9">
 				<h2>Description</h2>
 				<p>
-					<?php echo utf8_decode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
 					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus. 
+					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula.<br><br>
+					Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus.<br><br>
 					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.'); ?>
+					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
 				</p>
 				<p>
-					<?php echo utf8_decode('Quantité:'); ?>
+					Quantité:
 					<select class="product-price-select">
 						<option value="250" selected="selected">250g</option>
 						<option value="500">500g</option>

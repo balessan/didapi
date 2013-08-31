@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 Class User {
 	//Fondamental attributes of a user
 	private $_username;

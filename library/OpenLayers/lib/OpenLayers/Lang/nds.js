@@ -8,13 +8,13 @@
 
 /**
  * Namespace: OpenLayers.Lang["nds"]
- * Dictionary for Plattdüütsch.  Keys for entries are used in calls to
+ * Dictionary for PlattdÃÂÃÂ¼ÃÂÃÂ¼tsch.  Keys for entries are used in calls to
  *     <OpenLayers.Lang.translate>.  Entry bodies are normal strings or
  *     strings formatted for use with <OpenLayers.String.format> calls.
  */
 OpenLayers.Lang["nds"] = OpenLayers.Util.applyDefaults({
 
-    'unhandledRequest': "Unbehannelt Trüchmellels för de Anfraag ${statusText}",
+    'unhandledRequest': "Unbehannelt TrÃÂÃÂ¼chmellels fÃÂÃÂ¶r de Anfraag ${statusText}",
 
     'Permalink': "Permalink",
 
@@ -24,7 +24,7 @@ OpenLayers.Lang["nds"] = OpenLayers.Util.applyDefaults({
 
     'noFID': "En Feature, dat keen FID hett, kann nich aktuell maakt warrn.",
 
-    'browserNotSupported': "Dien Browser ünnerstütt keen Vektorbiller. Ünnerstütt Renderers:\n${renderers}",
+    'browserNotSupported': "Dien Browser ÃÂÃÂ¼nnerstÃÂÃÂ¼tt keen Vektorbiller. ÃÂÃÂnnerstÃÂÃÂ¼tt Renderers:\n${renderers}",
 
     'commitSuccess': "WFS-Transakschoon: hett klappt ${response}",
 
@@ -32,6 +32,6 @@ OpenLayers.Lang["nds"] = OpenLayers.Util.applyDefaults({
 
     'Scale = 1 : ${scaleDenom}': "Skaal = 1 : ${scaleDenom}",
 
-    'methodDeprecated': "Disse Methood is oold un schall dat in 3.0 nich mehr geven. Bruuk dor man beter ${newMethod} för."
+    'methodDeprecated': "Disse Methood is oold un schall dat in 3.0 nich mehr geven. Bruuk dor man beter ${newMethod} fÃÂÃÂ¶r."
 
 });

@@ -1,12 +1,5 @@
 <?php include("../header.php") ?>
 
-<?php
-	require('../library/RedBeanORM/rb.php');
-
-        R::setup('mysql:host=localhost;
-                        dbname=didapi','root','');
-?>
-
 <style> 
 #rucher_form
 {
@@ -40,7 +33,7 @@
 					<input type="submit" id="rucher_form_submit" name="rucher_form_submit" class="button" />
 				</fieldset>
 			</form>
-			<button id="create_rucher">Creer un nouveau rucher</button>
+			<button id="create_rucher">Créer un nouveau rucher</button>
 		</div>
 
 		<div id="rucher_table_wrapper"/>
@@ -49,6 +42,14 @@
 
 <script type="text/javascript">
 	$(function(){
+		$.ajaxSetup({contentType: 'Content-Type: text/html; charset=UTF-8'});
+
+		$.ajaxSetup({
+        		'beforeSend' : function(xhr) {
+             			xhr.overrideMimeType('text/html; charset=UTF-8');
+        			},
+		});
+		
 		refreshRucherTable();
 
 		$('#create_rucher').click(function(e){
@@ -68,7 +69,8 @@
                                 	$form.before("<p>"+responseJson.message+"</p>");
 					refreshRucherTable();
                         	},
-                        	error: function() {
+ 
+                      	error: function() {
                                 	$form.before("<p>There was an error processing your request.</p>");
                         	}
                 	});
@@ -77,11 +79,11 @@
 	});
 	
 	function refreshRucherTable(){
-		$('#rucher_table_wrapper').load('../includes/ajax/load_rucher_list.php', '');
+		$('#rucher_table_wrapper').load(decodeURIComponent('../includes/ajax/load_rucher_list.php', ''));
 	}
 
 	function refreshRucheTable(rucherId){
-		$('#ruche_table_wrapper' + rucherId).load('includes/ajax/load_ruche_list.php?rucher_id=' . rucherId , '');
+		$('#ruche_table_wrapper' + rucherId).load(decodeURIComponent('includes/ajax/load_ruche_list.php?rucher_id=' . rucherId , ''));
 	}
 
 </script>

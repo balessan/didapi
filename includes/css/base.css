@@ -42,7 +42,7 @@ body
 .carousel { margin-bottom: 0px; margin-top: 0px }
 
 .carousel .img  { position: absolute; top: 0; left: 0; min-width: 100%; height: 250px; }
-.carousel-control { z-index: 10; }
+.carousel-control { margin-top: 10px; z-index: 10; }
 
 .featurette
 {

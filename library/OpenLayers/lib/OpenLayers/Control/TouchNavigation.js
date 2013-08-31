@@ -15,7 +15,7 @@
  *     double-tapping, tap with two fingers, and pinch zoom).  Create a new 
  *     control with the <OpenLayers.Control.TouchNavigation> constructor.
  *
- * If you’re only targeting touch enabled devices with your mapping application,
+ * If youÃÂ¢ÃÂÃÂre only targeting touch enabled devices with your mapping application,
  *     you can create a map with only a TouchNavigation control. The 
  *     <OpenLayers.Control.Navigation> control is mobile ready by default, but 
  *     you can generate a smaller build of the library by only including this

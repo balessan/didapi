@@ -11,7 +11,7 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span3" style="padding-top: 15px;">
-				<img src="/link/to/printemps" alt="/link/to/printemps" width="200">
+				<img src="<?php echo $include_path; ?>includes/img/pot/printemps_min.JPG" class="img-circle" alt="Photo de nos miels de printemps" width="200">
 			</div>
 			
 			<div class="span9">

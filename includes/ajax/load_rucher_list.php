@@ -64,6 +64,7 @@
 			echo '<h3>Liste des ruches associées au rucher</h3>';
 			echo '<table class="table" style="width: 100%;">
 				<thead>
+					<th>Sélectionner</th>
 					<th>Id</th>
 					<th>Numéro</th>
 					<th>Modifier</th>
@@ -73,6 +74,7 @@
 			foreach($allRuches as $ruche)
 			{
 				echo '<tr>';
+				echo '<td><input type="checkbox" class="selectCheckboxFor' . $rucher->id . '" value="' . $ruche->id . '" name="selected_ruche_rucher' . $rucher->id . '[]" /></td>';
 				echo '<td>' . $ruche->id . '</td>';
 				echo '<td>' . $ruche->name . '</td>';
 				echo '<td><a href="./ruche/detail.php?id=' .  $ruche->id . '">Lien</a></td>';
@@ -81,6 +83,7 @@
 			echo '</tbody>
 			</table>';
 		}
+		echo '<button id="delete_ruches_of' . $rucher->id . '" onclick="deleteRucheFor(' . $rucher->id . ')">Supprimer</button><button id="moveRuchesOf' . $rucher->id . 'toOther">Déplacer</button><select id="destinationListForRucher' . $rucher->id . '"><option>Rucher1</option><option>Rucher2</option><option>Rucher3</option></select><br>';
 		echo '<form id="new_ruche_form' . $rucher->id . '"  style="display: none;">
 		<legend>Ajouter une nouvelle ruche au rucher</legend>
 		<fieldset>
@@ -91,7 +94,6 @@
 		</fieldset>
 	</form>
 	<button id="add_ruche_to_rucher' .  $rucher->id . '" onclick="showRucheForm(' . $rucher->id . ')">Ajouter une ruche</button>';
-
 		echo '</div>';
 	}
 	
@@ -99,7 +101,8 @@
 	echo '<br>';
 	echo '<br>';
 	echo '<br>';
-?>	
+	echo '</div>';
+?>
 
 <script type="text/javascript">
 	$(function() {
@@ -111,6 +114,21 @@
 		$('.rucher').droppable();
 		$('.rucher').sortable();
 	});
+	
+	function deleteRucheFor(rucherId) {
+		
+		$('.selectCheckboxFor' + rucherId).each(function(){
+			if($(this).is('checked')){
+				$.get('../includes/ajax/delete_ruche.php', { ruche_id: $(this).val() }.done(function() {
+						$('#delete_ruches_of' + rucherId).before("<p>Success</p>");
+					}).fail(function() {
+						$('#delete_ruches_of' + rucherId).before("<p>There was an error processing your request.</p>");
+					})
+				);	
+			}
+		});
+    	}
+	
 
 	function createRucheFor(rucherId)
 	{
@@ -140,3 +158,4 @@
 		$('#ruche_table_wrapper' + rucherId).load('../includes/ajax/load_ruche_list.php?rucher_id=' + rucherId, '');
 	}
 </script>
+

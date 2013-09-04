@@ -11,6 +11,7 @@
 		<link href="<?php echo $include_path; ?>includes/css/bootstrap.min.css" rel="stylesheet">
 		<link href="<?php echo $include_path; ?>includes/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link href="<?php echo $include_path; ?>includes/css/base.css" rel="stylesheet">
+		<link href="<?php echo $include_path; ?>includes/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
 	</head>
 	<body>
 		
@@ -20,9 +21,10 @@
 			<script src="<?php echo $include_path; ?>includes/js/jquery-1.9.1.min.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/bootstrap.min.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/base.js"></script>
+			<!--<script src="<?php //echo $include_path; ?>includes/js/bootstrap-datepicker.js"></script>-->
 			<script src="<?php echo $include_path; ?>library/ckeditor/ckeditor.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/jquery-ui/jquery-ui-min.js"></script>
-
+			
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">

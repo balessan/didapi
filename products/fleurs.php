@@ -17,12 +17,19 @@
 			<div class="span9">
 				<h2>Description</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
-					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus. 
-					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
+					Le miel “Toutes fleurs” porte bien son nom puisqu’il est en effet constitué de différents types de pollens et de nectars en fonction des 
+					fleurs qui se trouvent à proximité des ruchers. Il peut être produit durant toute la saison, entre deux grandes floraisons par exemple. 
+					Ce miel n’étant pas composé à partir d’une espèce de fleur en majorité, il n’est pas “typé” comme peuvent l’être le miel d’acacia ou de 
+					sarrasin. De plus sa composition dépendra aussi de la situation géographique des ruches. 
+					Dans le Loiret, le miel “Toutes fleurs” peut être produit à partir des fleurs de carottes, de tournesol, d’aubépine…<br>
+					On obtient alors un miel au caractère équilibré, qui garde une certaine douceur même s’il est plus prononcé que les miels doux. 
+					Il est apprécié de ceux qui aiment la variété et les surprises, car son goût n’est jamais tout à fait le même d’une année sur l’autre !
+				</p>
+				<p>
+					<b>Aspect</b> : En fonction de sa composition, il va de jaune paille à orangé et est le plus souvent assez crémeux. <br>
+					<b>Odeur</b> : Difficile à définir ! Le miel toutes fleurs produit dans le Loiret par Didier a souvent une odeur un peu fruitée rappelant l’abricot sec et les bois blonds. 
+					Il peut aussi développer des notes épicées de noix de muscade et de poivre, avec quelques inflexions fleuries. <br>
+					<b>Goût</b> : Même dilemne ! ;-) Selon les années, le miel toutes fleurs exprimera plus ou moins fort des notes fleuries, ou fruitées (abricot sec, ananas). <br>
 				</p>
 				<p>
 					Quantite:

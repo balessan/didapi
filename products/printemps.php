@@ -17,12 +17,18 @@
 			<div class="span9">
 				<h2>Description</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
-					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus. 
-					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
+					C’est en réalité le miel de colza (Brassica napus) qui se cache derrière l’appelation : “Miel de printemps” ou “Miel du Gatinaîs”. 
+					Ces petites fleurs d’un jaune d’or brillant sont en effet les premières à éclore à la sortie de l’hiver. 
+					L’occasion pour les abeilles de reconstruire les réserves de miels entamées durant l’hiver, grâce à ces fleurs riches en nectar. 
+					Les abeilles en tirent un miel très doux, fin et crémeux, incontestablement l’un des favoris des français. 
+				</p>
+				<p>
+					<b>Aspect</b> : Très crémeux et facile à tartiner, le miel de printemps a une belle couleur blanc crème. <br>
+					<b>Odeur</b> : L’odeur caractéristique du colza se retrouve dans ce miel aux accents de foin, d’herbes sèches et de céréales. 
+					Elle rappelle l’odeur fraîche et un peu verte des jonquilles et du narcisse. <br>
+					<b>Goût</b> : Son goût en bouche est suave et rond et rappelle le beurre frais. 
+					Il déploie à nouveau des notes de foin et de paille, et une pointe de céréales. 
+					Le tout reste très doux, délicieux sur les tartines du petit-déjeuner !<br>
 				</p>
 				<p>
 					Quantite:

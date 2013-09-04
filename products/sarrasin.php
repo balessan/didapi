@@ -26,12 +26,19 @@
 			<div class="span9 products-content">
 				<h2>Description</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
-					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus. 
-					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
+					Pendant un temps délaissée, la culture du sarrasin (Fagopyrum esculentum) ou blé noir connaît un regain d’intérêt depuis quelques années 
+					en France. Et c’est plutôt une aubaine pour les butineuses car sa floraison est longue et plutôt régulière au cours de l’été. Son pollen 
+					est réputé pour être très nutritif pour les abeilles, grâce auquel elle produisent un des miels les plus puissants de la palette 
+					disponible.<br>
+					Tout comme le miel de châtaigner, le miel de sarrasin ne laisse pas indifférent et est généralement utilisé dans la 
+					confection du pain d’épices, auquel il apporte tout son caractère et sa force. 
+				</p>
+				<p>
+					<b>Aspect</b> : Sa belle couleur brun foncé est plus ou moins prononcé selon la cristallisation qui se fait assez lentement et est plutôt fine.<br>
+					<b>Odeur</b> : A l’image de sa couleur franche, le miel de sarrasin dégage des arômes de céréales complètes, de pain noir, de sucre brun, voir de caramel sur le point de brûler ! 
+					Son odeur animale est prononcée, avec un aspect presque fumé.<br>
+					<b>Goût</b> : Sa profondeur et sa densité en font un miel plein et généreux comme aucun autre. 
+					Une saveur forte de pain complet, de céréales s’associe avec des pointes boisées, fumées et caramélisées. <br>
 				</p>
 				<h2>Le sarrasin</h2>
 				<p>

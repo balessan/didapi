@@ -17,12 +17,11 @@
 			<div class="span9">
 				<h2>Description</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
-					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus. 
-					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
+					Un bon pain d'épices ne se réussit pas sans un bon miel ! C'est traditionnellement le miel de sarrasin qui est utilisé pour la 
+					confection de celui-ci aux côtés de la cannelle et de la noix de muscade, auxquelles il apporte son caractère et ses notes généreuses de 
+					céréales, et de sucre brun.<br>
+					On peut aussi proposer une variante assorties de petits morceaux de gingembre confits. Miam !<br><br>
+					Un régal pour le goûter ou pour un petit creu !
 				</p>
 				<p>
 					Quantite:

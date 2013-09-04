@@ -17,14 +17,18 @@
 			<div class="span9">
 				<h2>Description</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
-					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula.<br><br>
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus.<br><br>
-					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
+					Entre les mois de mai et de juin survient souvent l'une des floraison les plus spectaculaires et mellifères de nos contrées : celle de l'Acacia
+					ou Robinier faux-acacia (<i>Robinia pseudoacacia</i>). Ses fleurs d'un blanc pur, réparties en longues grappes de 10 à 25cm de long, dégagent un
+					parfum délicat et poudré, proche de celui de la fleur d'oranger. Les abeilles apprécient beaucoup cette espèce dont les fleurs apparaissent en grand
+					nombre relativement tôt dans la saison et produisent une grande quantité de nectar.<br>
+					Le miel d'acacia est très apprécié pour sa forte teneur en sucre et sa saveur douce et peu prononcée.<br><br>
+				</p>	
+				<p>	
+					<b>Aspect</b> : Le miel d'acacia se présente sous forme liquide, d'une jolie couleur jaune blond.<br>
+					<b>Odeur</b> : Son odeur est très douce, fleurie et suave, avec des accents de fleurs blanches type fleur d’oranger.<br>
+					<b>Goût</b> : Le miel d’acacia est apprécié pour la finesse de son goût. Délicat et légèrement acidulé, sa saveur est fraîche, un peu citronnée. On retrouve en fond la douceur discrète d’un bouquet de fleurs blanches. On l’utilise facilement en pâtisserie, mais aussi comme agent sucrant pour les tisanes, le thé, le lait chaud. Il est d’ailleurs recommandé en cas de mal de gorge pour son pouvoir adoucissant.
 				</p>
+				<br>
 				<p>
 					Quantité:
 					<select class="product-price-select">

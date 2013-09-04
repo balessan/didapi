@@ -17,12 +17,17 @@
 			<div class="span9">
 				<h2>Description</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
-					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus. 
-					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
+					Connu principalement pour ses fruits, le châtaigner (<i>Castanea sativa</i>) est aussi devenu réputé pour le miel 
+					qu'en tirent les abeilles. Ses petites fleurs réparties sur une longue tige dégagent des effluves puissants, à la fois boisés et poudrés. 
+					La récolte a généralement lieu dans le courant du mois de juillet. 
+					Le miel de châtaigner est aujourd'hui devenu un miel très apprécié des amateurs pour son caractère unique et marqué.<br>
+					Il est aussi très riche en oligo-éléments : potassium, magnésium, manganèse notamment.
+				</p>
+				<p>
+					<b>Aspect</b> : D'une belle couleur ambrée chaude à l'état liquide, il cristallise lentement et peut prendre alors des teintes plus foncées de caramel à brun.<br>
+					<b>Odeur</b> : Son parfum est rond, chaud et boisé. Des notes de châtaigne se marient avec une senteur amère et légèrement animale.<br>
+					<b>Goût</b> : Très prononcé, il est long en bouche et son amertume peut rappeler le café. 
+					A l'image d'un bon whisky, le miel de châtaigner avec ses accents maltés et tourbés est un vrai miel de dégustation et de connaisseurs. <br>
 				</p>
 				<p>
 					Quantite:

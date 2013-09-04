@@ -17,12 +17,18 @@
 			<div class="span9">
 				<h2>Description</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra urna at mi facilisis eget venenatis velit iaculis. 
-					Vestibulum in eros nec metus faucibus cursus non vitae orci. Sed viverra congue urna, eget condimentum libero aliquam eget. 
-					Vivamus metus libero, molestie porta iaculis id, lobortis nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-					per inceptos himenaeos. Sed ultricies, velit et ultrices congue, lacus sapien pulvinar sapien, vitae tristique erat est dignissim lacus. 
-					Etiam libero est, rutrum at ornare at, convallis ut ipsum. Nam rutrum porttitor mi, ut tristique tellus vulputate vitae. 
-					In a turpis libero, eget lacinia arcu. Nulla non magna a arcu fermentum lobortis vitae id metus.
+					A l’image du miel “Toutes fleurs”, le miel de fôret est en effet composé d’un mélange de nectars et de miellats variés. 
+					Sa production dépend là encore de la situation géographique des ruches, et peut survenir à n’importe quel moment de l’été de début juin à fin août. 
+					Dans le Loiret, le miel de forêt peut être un mélange de chêne, de lierre, de châtaigner, de ronce…<br>
+					Moins fort et amer que le miel de châtaigner, le miel de forêt est cependant un miel au caractère assez prononcé, 
+					qui ravira les amateurs de saveurs pleines et expressives.
+				</p>
+				<p>
+					<b>Aspect</b> : Sa cristallisation est lente, il est généralement liquide assez longtemps et sa couleur fluctue entre le brun chaud et le brun foncé.<br>
+					<b>Odeur</b> : Son odeur est marquée par son lieu de production. 
+					Il exprime des notes boisées de chêne et de liège, et rappelle par certains aspect l’odeur des feuilles sèches. <br>
+					<b>Goût</b> : Long en bouche, on perçoit une pointe d’amertume, accompagnée de notes boisées fermes rappelant les fût de chêne. 
+					Il peut donner un caractère intéressant à vos préparations culinaires, ou se déguste simplement sur un toast grillé pour en apprécier tous les arômes ! <br>
 				</p>
 				<p>
 					Quantite:

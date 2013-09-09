@@ -1,18 +1,21 @@
 <?php
-	require('../../library/RedBeanORM/rb.php');
 	include_once('../../globals.php');
-			
-	R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
-			
-	$allContacts = R::findAll('contact', '');
+	
+	try {	
+		$entity = new Entity();
+		$allContacts = $entity->GetAllEntities('contact');
+	
+	} catch (Exception $e) {
+		echo $e->getMessage();
+	}
 ?>
 
 <table class="table" style="width: 70%;">
 	<thead>
 		<th>Nom</th>
-		<th><?php echo utf8_decode('Prénom'); ?></th>
+		<th>Prénom</th>
 		<th>Courriel</th>
-		<th><?php echo utf8_decode('Téléphone'); ?></th>
+		<th>Téléphone</th>
 		<th>Commentaire</th>
 	</thead>
 	<tbody>

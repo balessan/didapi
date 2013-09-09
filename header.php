@@ -21,14 +21,13 @@
 			<script src="<?php echo $include_path; ?>includes/js/jquery-1.9.1.min.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/bootstrap.min.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/base.js"></script>
-			<!--<script src="<?php //echo $include_path; ?>includes/js/bootstrap-datepicker.js"></script>-->
 			<script src="<?php echo $include_path; ?>library/ckeditor/ckeditor.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/jquery-ui/jquery-ui-min.js"></script>
 			
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">
-						<a class="brand" href="/didapi/index.php">Didapi</a>
+						<a class="brand" href="<?php echo $include_path; ?>index.php">Didapi</a>
 						<div class="nav-collapse collapse">
 							<p class="navbar-text pull-right">
 							<?php 

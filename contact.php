@@ -61,14 +61,12 @@
 		</div>
 		
 		<div id="contact_table_wrapper">
-			<div id="contact_table" />
-			
 		</div>
 	</div>
 	
     <script type="text/javascript">
 		$(function(){
-			//refreshContactTable();
+			refreshContactTable();
 			locateSaintFlorent();
 			
 			$('#add_contact_submit').click(function(e){
@@ -88,6 +86,7 @@
 				  dataType: 'json',
 				  success: function(responseJson) {
 					 $form.before("<p>"+responseJson.message+"</p>");
+					 refreshContactTable();
 				  },
 				  error: function() {
 					 $form.before("<p>There was an error processing your request.</p>");
@@ -97,9 +96,7 @@
 		});
 		
 		function refreshContactTable(){
-			$('#contact_table_wrapper').load('./includes/ajax/load_contact_list.php', function(){
-			   setTimeout(refreshContactTable, 5000);
-			});
+			$('#contact_table_wrapper').load('./includes/ajax/load_contact_list.php');
 		}
 			
 		function locateSaintFlorent()

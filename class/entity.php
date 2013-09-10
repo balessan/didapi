@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../library/RedBeanORM/rb.php';	
+require_once __DIR__ . '/utility.php';
 /**
 *
 * Entity: Base class of all objects stored in the database I will use 
@@ -20,14 +21,8 @@ class Entity {
 		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 
 		$this->_entity = R::dispense($entityName);
-
-		foreach($post as $key)
-		{
-			if (isset($_POST[$key]))
-			{
-				$this->_entity->setAttr($key, Utility::ConvertAsSafeString($_POST[$key]));
-			}
-		}
+		
+		$this->SetAttributes($post);		
 
 		$this->_id = R::store($this->_entity);
 		
@@ -37,6 +32,17 @@ class Entity {
 		}
 
 		return $success;
+	}
+	
+	protected function SetAttributes($post)
+	{
+		foreach($post as $key)
+		{
+			if (isset($_POST[$key]))
+			{
+				$this->_entity->setAttr($key, Utility::ConvertAsSafeString($_POST[$key]));
+			}
+		}
 	}
 	
 	// Base method for retrieving all entities of a certain type

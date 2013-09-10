@@ -42,13 +42,6 @@
 
 <script type="text/javascript">
 	$(function(){
-		$.ajaxSetup({contentType: 'Content-Type: text/html; charset=UTF-8'});
-
-		$.ajaxSetup({
-        		'beforeSend' : function(xhr) {
-             			xhr.overrideMimeType('text/html; charset=UTF-8');
-        			},
-		});
 		
 		refreshRucherTable();
 

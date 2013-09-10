@@ -37,29 +37,26 @@
 </style>
 
 <?php
-	require('../../library/RedBeanORM/rb.php');
 	include_once('../../globals.php');
 			
-	R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
-	
-	$allRuchers = R::findAll('rucher', '');
+	$allApiaries = ApiaryFactory::FindAll();
 	
 	echo '<div id="accordion" class="ui-accordion ui-widget ui-helper-reset">';	
 	
-	foreach($allRuchers as $rucher)
+	foreach($allApiaries as $apiary)
 	{
-		echo '<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons rucher-title rucher-header">' . $rucher->id . '-' . $rucher->name . ' a ' . $rucher->location . '</h3>';
+		echo '<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons rucher-title rucher-header">' . $apiary->id . '-' . $apiary->name . ' a ' . $apiary->location . '</h3>';
 		echo '<div class="rucher-content ui-accordion-content ui-helper-reset ui-widget-content">';
-		echo '<p>Détail du rucher : <a href="./rucher/detail.php?id=' . $rucher->id . '">Lien</a></p>';
+		echo '<p>Détail du rucher : <a href="./rucher/detail.php?id=' . $apiary->id . '">Lien</a></p>';
 
-		$allRuches = 0;
+		$allBeehives = 0;
 		
-		if(isset($rucher->id))
+		if(isset($apiary->id))
 		{
-			$allRuches = R::find('ruche', ' rucher_id = :rucher_id', array(':rucher_id' => $rucher->id));
+			$allBeehives = BeehiveFactory::FindByApiary($apiary->id);
 		}
 		
-		if (isset($allRuches))
+		if (isset($allBeehives))
 		{
 			echo '<h3>Liste des ruches associées au rucher</h3>';
 			echo '<table class="table" style="width: 100%;">
@@ -71,29 +68,29 @@
 				</thead>
 				<tbody>';
 				
-			foreach($allRuches as $ruche)
+			foreach($allBeehives as $beehive)
 			{
 				echo '<tr>';
-				echo '<td><input type="checkbox" class="selectCheckboxFor' . $rucher->id . '" value="' . $ruche->id . '" name="selected_ruche_rucher' . $rucher->id . '[]" /></td>';
-				echo '<td>' . $ruche->id . '</td>';
-				echo '<td>' . $ruche->name . '</td>';
-				echo '<td><a href="./ruche/detail.php?id=' .  $ruche->id . '">Lien</a></td>';
+				echo '<td><input type="checkbox" class="selectCheckboxFor' . $beehive->id . '" value="' . $beehive->id . '" name="selected_ruche_rucher' . $apiary->id . '[]" /></td>';
+				echo '<td>' . $beehive->id . '</td>';
+				echo '<td>' . $beehive->name . '</td>';
+				echo '<td><a href="./ruche/detail.php?id=' .  $beehive->id . '">Lien</a></td>';
 				echo '</tr>';
 			}
 			echo '</tbody>
 			</table>';
 		}
-		echo '<button id="delete_ruches_of' . $rucher->id . '" onclick="deleteRucheFor(' . $rucher->id . ')">Supprimer</button><button id="moveRuchesOf' . $rucher->id . 'toOther">Déplacer</button><select id="destinationListForRucher' . $rucher->id . '"><option>Rucher1</option><option>Rucher2</option><option>Rucher3</option></select><br>';
-		echo '<form id="new_ruche_form' . $rucher->id . '"  style="display: none;">
+		echo '<button id="delete_ruches_of' . $apiary->id . '" onclick="deleteRucheFor(' . $apiary->id . ')">Supprimer</button><button id="moveRuchesOf' . $apiary->id . 'toOther">Déplacer</button><select id="destinationListForRucher' . $apiary->id . '"><option>Rucher1</option><option>Rucher2</option><option>Rucher3</option></select><br>';
+		echo '<form id="new_ruche_form' . $apiary->id . '"  style="display: none;">
 		<legend>Ajouter une nouvelle ruche au rucher</legend>
 		<fieldset>
 			<label>Numéro</label><input type="text" name="name" />
-			<input type="hidden" value="' . $rucher->id .'" name="rucher_id" id="rucher_id" />
-			<button type="button" id="create_ruche' .  $rucher->id . '" onclick="createRucheFor(' .  $rucher->id . ')">Créer la ruche</button>
+			<input type="hidden" value="' . $apiary->id .'" name="apiary_id" id="apiary_id" />
+			<button type="button" id="create_ruche' .  $apiary->id . '" onclick="createRucheFor(' .  $apiary->id . ')">Créer la ruche</button>
 			
 		</fieldset>
 	</form>
-	<button id="add_ruche_to_rucher' .  $rucher->id . '" onclick="showRucheForm(' . $rucher->id . ')">Ajouter une ruche</button>';
+	<button id="add_ruche_to_rucher' .  $apiary->id . '" onclick="showRucheForm(' . $apiary->id . ')">Ajouter une ruche</button>';
 		echo '</div>';
 	}
 	

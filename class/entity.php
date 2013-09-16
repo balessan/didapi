@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../library/RedBeanORM/rb.php';	
-require_once __DIR__ . '/utility.php';
+require_once __DIR__ . '/database.php';
+
 /**
 *
 * Entity: Base class of all objects stored in the database I will use 
@@ -9,54 +9,54 @@ require_once __DIR__ . '/utility.php';
 * Mapped to database by RedBeanPHP ORM.
 *
 **/
+
 class Entity {
 	protected $_id;
 	protected $_entity;
-	protected $_entities;
+
+	//Base method to use to save an entity in the database
+	public function Save($post = null, $entityName = null)
+	{
+		if (null == $post && null == $entityName)
+		{
+			$this->SaveEntity();
+		}
+		else
+		{
+			$success = $this->SaveWithParameters($post, $entityName);
+			return $success;
+		}
+	}
+
+	private function SaveEntity()
+	{
+		if (isset($this->_entity))
+		{
+			Database::Save($this->_entity);
+		}		
+	}
 
 	// Base Method to be used for saving to Database purpose
-	public function SaveEntity($post, $entityName) {
+	private function SaveWithParameters($post, $entityName) 
+	{
 		$success = false;
 
-		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
+		$result = Database::Save(null, $post, $entityName);
 
-		$this->_entity = R::dispense($entityName);
-		
-		$this->SetAttributes($post);		
-
-		$this->_id = R::store($this->_entity);
-		
-		if ($this->_id != null)
+		if (isset($result) && !empty($result))
 		{
-			$success = true;
+			$this->_entity = $result['entity'];
+			$this->_id = $result['entity_id'];
+
+			if (isset($this->_entity) && isset($this->_id))
+			{
+				$success = true;
+			}
 		}
 
 		return $success;
 	}
-	
-	protected function SetAttributes($post)
-	{
-		foreach($post as $key)
-		{
-			if (isset($_POST[$key]))
-			{
-				$this->_entity->setAttr($key, Utility::ConvertAsSafeString($_POST[$key]));
-			}
-		}
-	}
-	
-	// Base method for retrieving all entities of a certain type
-	public function GetAllEntities($entityName)
-	{
-		//TO be improved to add caching on Entities
-		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
-	
-		if ($this->_entities == null || empty($this->_entities)) {
-			$this->_entities = R::findAll($entityName, '');
-		}
-
-		return $this->_entities;			
-	}
 }
 
 ?>
+

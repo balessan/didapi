@@ -1,13 +1,13 @@
 <?php
 
-require_once __DIR__ . '/entityfactory.php';
+require_once __DIR__ . '/entityrepository.php';
 /**
 *
-* First override of my Factory base class
+* First override of my Repository base class
 * To provide corresponding Apiary to associated Beehives.
 *
 **/
-class ApiaryFactory extends EntityFactory
+class ApiaryRepository extends EntityRepository
 {
 	public static function FindAll()
 	{
@@ -19,6 +19,5 @@ class ApiaryFactory extends EntityFactory
 		return parent::FindById('apiary', $id);
 	}
 }
-
 
 ?>

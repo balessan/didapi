@@ -6,13 +6,11 @@
 * from its associated apiary.
 *
 **/
-class BeehiveFactory extends EntityFactory
+class BeehiveRepository extends EntityRepository
 {
 	public static function FindByApiary($apiary_id)
 	{
-		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
-		
-		$allBeehives = R::find('beehive', ' apiary_id = :apiary_id', array(':apiary_id' => $apiary_id));
+		$allBeehives = Database::FindAllByAssociatedId('beehive', 'apiary_id = :apiary_id', array(':apiary_id' => $apiary_id));
 		
 		return $allBeehives;
 	}

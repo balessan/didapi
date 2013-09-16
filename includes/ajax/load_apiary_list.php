@@ -1,18 +1,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <style text="text/css">
-	.rucher-title {
+	.apiary-title {
 		border: 1px solid gray;
 		margin:  0 0 0 0;
 		padding: 5px;	
 	}
-	.rucher-header {
+	.apiary-header {
 		border-top-right-radius: 5px;
 		border-top-left-radius: 5px;
 		background-color: lightgray;
 	}
 	
-	.rucher-content {
+	.apiary-content {
 		border-bottom:    1px solid gray;
 		border-right:  1px solid gray;
 		border-left:   1px solid gray;
@@ -39,7 +39,7 @@
 <?php
 	include_once('../../globals.php');
 			
-	$allApiaries = ApiaryFactory::FindAll();
+	$allApiaries = ApiaryRepository::FindAll();
 	
 	echo '<div id="accordion" class="ui-accordion ui-widget ui-helper-reset">';	
 	
@@ -53,10 +53,10 @@
 		
 		if(isset($apiary->id))
 		{
-			$allBeehives = BeehiveFactory::FindByApiary($apiary->id);
+			$allBeehives = BeehiveRepository::FindByApiary($apiary->id);
 		}
 		
-		if (isset($allBeehives))
+		if (isset($allBeehives) && !empty($allBeehives))
 		{
 			echo '<h3>Liste des ruches associées au rucher</h3>';
 			echo '<table class="table" style="width: 100%;">
@@ -71,7 +71,7 @@
 			foreach($allBeehives as $beehive)
 			{
 				echo '<tr>';
-				echo '<td><input type="checkbox" class="selectCheckboxFor' . $beehive->id . '" value="' . $beehive->id . '" name="selected_ruche_rucher' . $apiary->id . '[]" /></td>';
+				echo '<td><input type="checkbox" class="selectCheckboxFor' . $beehive->id . '" value="' . $beehive->id . '" name="selected_beehive_apiary' . $apiary->id . '[]" /></td>';
 				echo '<td>' . $beehive->id . '</td>';
 				echo '<td>' . $beehive->name . '</td>';
 				echo '<td><a href="./ruche/detail.php?id=' .  $beehive->id . '">Lien</a></td>';
@@ -80,17 +80,17 @@
 			echo '</tbody>
 			</table>';
 		}
-		echo '<button id="delete_ruches_of' . $apiary->id . '" onclick="deleteRucheFor(' . $apiary->id . ')">Supprimer</button><button id="moveRuchesOf' . $apiary->id . 'toOther">Déplacer</button><select id="destinationListForRucher' . $apiary->id . '"><option>Rucher1</option><option>Rucher2</option><option>Rucher3</option></select><br>';
-		echo '<form id="new_ruche_form' . $apiary->id . '"  style="display: none;">
+		echo '<button id="delete_beehives_of' . $apiary->id . '" onclick="deleteBeehiveFor(' . $apiary->id . ')">Supprimer</button><button id="moveBeehivesOf' . $apiary->id . 'toOther">Déplacer</button><select id="destinationListForApiary' . $apiary->id . '"><option>Rucher1</option><option>Rucher2</option><option>Rucher3</option></select><br>';
+		echo '<form id="new_beehive_form' . $apiary->id . '"  style="display: none;">
 		<legend>Ajouter une nouvelle ruche au rucher</legend>
 		<fieldset>
 			<label>Numéro</label><input type="text" name="name" />
 			<input type="hidden" value="' . $apiary->id .'" name="apiary_id" id="apiary_id" />
-			<button type="button" id="create_ruche' .  $apiary->id . '" onclick="createRucheFor(' .  $apiary->id . ')">Créer la ruche</button>
+			<button type="button" id="create_beehive' .  $apiary->id . '" onclick="createBeehiveFor(' .  $apiary->id . ')">Créer la ruche</button>
 			
 		</fieldset>
 	</form>
-	<button id="add_ruche_to_rucher' .  $apiary->id . '" onclick="showRucheForm(' . $apiary->id . ')">Ajouter une ruche</button>';
+	<button id="add_beehive_to_apiary' .  $apiary->id . '" onclick="showBeehiveForm(' . $apiary->id . ')">Ajouter une ruche</button>';
 		echo '</div>';
 	}
 	
@@ -103,23 +103,23 @@
 
 <script type="text/javascript">
 	$(function() {
-		$("#accordion").accordion({
+		$('#accordion').accordion({
 			collapsible: true,
 			autoHeight: false
 		});
-		$('.rucher').draggable();
-		$('.rucher').droppable();
-		$('.rucher').sortable();
+		$('.apiary').draggable();
+		$('.apiary').droppable();
+		$('.apiary').sortable();
 	});
 	
-	function deleteRucheFor(rucherId) {
+	function deleteBeehiveFor(apiaryId) {
 		
-		$('.selectCheckboxFor' + rucherId).each(function(){
+		$('.selectCheckboxFor' + apiaryId).each(function(){
 			if($(this).is('checked')){
 				$.get('../includes/ajax/delete_ruche.php', { ruche_id: $(this).val() }.done(function() {
-						$('#delete_ruches_of' + rucherId).before("<p>Success</p>");
+						$('#delete_beehives_of' + apiaryId).before("<p>Success</p>");
 					}).fail(function() {
-						$('#delete_ruches_of' + rucherId).before("<p>There was an error processing your request.</p>");
+						$('#delete_beehives_of' + apiaryId).before("<p>There was an error processing your request.</p>");
 					})
 				);	
 			}
@@ -127,18 +127,18 @@
     	}
 	
 
-	function createRucheFor(rucherId)
+	function createBeehiveFor(apiaryId)
 	{
-		$form = $(this).closest('form');
+		$form = $('#new_beehive_form' + apiaryId);
 		
 		$.ajax({
-			url: '../includes/ajax/save_ruche.php',
+			url: '../includes/ajax/save_beehive.php',
 			type: 'POST',
-			data: $('#new_ruche_form' + rucherId).serialize(),
+			data: $('#new_beehive_form' + apiaryId).serialize(),
 			dataType: 'json',
 			success: function(responseJson) {
 				$form.before("<p>" + responseJson.message + "</p>");
-				refreshRucheTable(rucherId);
+				refreshBeehiveTable(apiaryId);
 			},
 			error: function() {
 				$form.before("<p>There was an error processing your request.</p>");
@@ -146,13 +146,13 @@
 		});
 	}
 
-	function showRucheForm(rucherId){
-		$('#new_ruche_form' + rucherId).show();
+	function showBeehiveForm(apiaryId){
+		$('#new_beehive_form' + apiaryId).show();
 	}
 
-	function refreshRucheTable(rucherId)
+	function refreshBeehiveTable(apiaryId)
 	{
-		$('#ruche_table_wrapper' + rucherId).load('../includes/ajax/load_ruche_list.php?rucher_id=' + rucherId, '');
+		$('#beehive_table_wrapper' + apiaryId).load('../includes/ajax/load_beehive_list.php?apiary_id=' + apiaryId, '');
 	}
 </script>
 

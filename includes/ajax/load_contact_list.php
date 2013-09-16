@@ -2,8 +2,7 @@
 	include_once('../../globals.php');
 	
 	try {	
-		$entity = new Entity();
-		$allContacts = $entity->GetAllEntities('contact');
+		$allContacts = ContactRepository::FindAll();
 	
 	} catch (Exception $e) {
 		echo $e->getMessage();

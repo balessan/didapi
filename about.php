@@ -52,7 +52,7 @@
 				</p>
 				
 				<p>
-					<label>Courriel:</label>    <a href="mailto:didapi@sfr.fr">didapi@sfr.fr</a>
+					<label>Courriel:</label>    <a href="mailto:didapi@orange.fr">didapi@orange.fr</a>
 				</p>
 			</p>
 		</div>

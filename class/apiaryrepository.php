@@ -11,7 +11,14 @@ class ApiaryRepository extends EntityRepository
 {
 	public static function FindAll()
 	{
-		return parent::FindAll('apiary');
+		$entities = Database::FindAll('apiary', '');
+
+		foreach ($entities as $entity)
+		{
+			self::$_entities[] = new Apiary($entity->id, $entity->name, $entity->location, $entity->beehives);
+		}
+
+		return self::$_entities;
 	}
 
 	public static function FindById($id)

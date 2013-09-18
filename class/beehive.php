@@ -16,6 +16,15 @@ class Beehive extends Entity
 	
 	private $_queen_year;
 	private $_type;
+	private $_name;
+
+	public function __construct($id, $name, $queen_year = null, $type = null)
+	{
+		parent::__construct($id);
+		$this->_name = $name;
+		if (isset($queen_year)) $this->_queen_year = $queen_year;
+		if (isset($type)) $this->_type = $type;
+	}
 
 	public function Save($post)
 	{

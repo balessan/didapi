@@ -45,9 +45,9 @@
 	
 	foreach($allApiaries as $apiary)
 	{
-		echo '<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons rucher-title rucher-header">' . $apiary->id . '-' . $apiary->name . ' a ' . $apiary->location . '</h3>';
+		echo '<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons rucher-title rucher-header">' . $apiary->GetId() . '-' . $apiary->GetName() . ' a ' . $apiary->GetLocation() . '</h3>';
 		echo '<div class="rucher-content ui-accordion-content ui-helper-reset ui-widget-content">';
-		echo '<p>Détail du rucher : <a href="./rucher/detail.php?id=' . $apiary->id . '">Lien</a></p>';
+		echo '<p>Détail du rucher : <a href="./rucher/detail.php?id=' . $apiary->GetId() . '">Lien</a></p>';
 
 		$allBeehives = 0;
 		
@@ -71,26 +71,26 @@
 			foreach($allBeehives as $beehive)
 			{
 				echo '<tr>';
-				echo '<td><input type="checkbox" class="selectCheckboxFor' . $beehive->id . '" value="' . $beehive->id . '" name="selected_beehive_apiary' . $apiary->id . '[]" /></td>';
-				echo '<td>' . $beehive->id . '</td>';
-				echo '<td>' . $beehive->name . '</td>';
-				echo '<td><a href="./ruche/detail.php?id=' .  $beehive->id . '">Lien</a></td>';
+				echo '<td><input type="checkbox" class="selectCheckboxFor' . $beehive->GetId() . '" value="' . $beehive->GetId() . '" name="selected_beehive_apiary' . $apiary->GetId() . '[]" /></td>';
+				echo '<td>' . $beehive->GetId() . '</td>';
+				echo '<td>' . $beehive->GetName() . '</td>';
+				echo '<td><a href="./ruche/detail.php?id=' .  $beehive->GetId() . '">Lien</a></td>';
 				echo '</tr>';
 			}
 			echo '</tbody>
 			</table>';
 		}
-		echo '<button id="delete_beehives_of' . $apiary->id . '" onclick="deleteBeehiveFor(' . $apiary->id . ')">Supprimer</button><button id="moveBeehivesOf' . $apiary->id . 'toOther">Déplacer</button><select id="destinationListForApiary' . $apiary->id . '"><option>Rucher1</option><option>Rucher2</option><option>Rucher3</option></select><br>';
-		echo '<form id="new_beehive_form' . $apiary->id . '"  style="display: none;">
+		echo '<button id="delete_beehives_of' . $apiary->GetId() . '" onclick="deleteBeehiveFor(' . $apiary->GetId() . ')">Supprimer</button><button id="moveBeehivesOf' . $apiary->GetId() . 'toOther">Déplacer</button><select id="destinationListForApiary' . $apiary->GetId() . '"><option>Rucher1</option><option>Rucher2</option><option>Rucher3</option></select><br>';
+		echo '<form id="new_beehive_form' . $apiary->GetId() . '"  style="display: none;">
 		<legend>Ajouter une nouvelle ruche au rucher</legend>
 		<fieldset>
 			<label>Numéro</label><input type="text" name="name" />
-			<input type="hidden" value="' . $apiary->id .'" name="apiary_id" id="apiary_id" />
-			<button type="button" id="create_beehive' .  $apiary->id . '" onclick="createBeehiveFor(' .  $apiary->id . ')">Créer la ruche</button>
+			<input type="hidden" value="' . $apiary->GetId() .'" name="apiary_id" id="apiary_id" />
+			<button type="button" id="create_beehive' .  $apiary->GetId() . '" onclick="createBeehiveFor(' .  $apiary->GetId() . ')">Créer la ruche</button>
 			
 		</fieldset>
 	</form>
-	<button id="add_beehive_to_apiary' .  $apiary->id . '" onclick="showBeehiveForm(' . $apiary->id . ')">Ajouter une ruche</button>';
+	<button id="add_beehive_to_apiary' .  $apiary->GetId() . '" onclick="showBeehiveForm(' . $apiary->GetId() . ')">Ajouter une ruche</button>';
 		echo '</div>';
 	}
 	

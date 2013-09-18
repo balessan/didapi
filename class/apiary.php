@@ -13,6 +13,14 @@ class Apiary extends Entity
 	private $_name;
 	private $_location;
 	
+	public function __construct($id, $name, $location, $beehives)
+	{
+		parent::__construct($id);
+		$this->_name = $name;
+		$this->_location = $location;
+		$this->_beehives = $beehives;
+	}
+
 	public function Save($post)
 	{
 		$success = false;
@@ -20,6 +28,21 @@ class Apiary extends Entity
 		$success = parent::Save($post, 'apiary');
 
 		return $success;
+	}
+
+	public function GetName()
+	{
+		return $this->_name;	
+	}
+	
+	public function GetLocation()
+	{
+		return $this->_location;	
+	}
+
+	public function GetBeehives()
+	{
+		return $this->_beehives;	
 	}
 }
 

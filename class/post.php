@@ -15,7 +15,7 @@ class Post extends Entity
 
 	public function __construct($id, $title, $content, $date, $user_id)
 	{
-		$this->_id = $id;
+		parent::__construct($id);
 		$this->_content = $content;
 		$this->_title = $title;
 		$this->_date = $date;

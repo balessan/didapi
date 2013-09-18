@@ -13,6 +13,11 @@ require_once __DIR__ . '/database.php';
 class Entity {
 	protected $_id;
 	protected $_entity;
+	
+	public function __construct($id)
+	{
+		$this->_id = $id;
+	}
 
 	//Base method to use to save an entity in the database
 	public function Save($post = null, $entityName = null)

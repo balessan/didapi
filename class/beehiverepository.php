@@ -10,9 +10,14 @@ class BeehiveRepository extends EntityRepository
 {
 	public static function FindByApiary($apiary_id)
 	{
-		$allBeehives = Database::FindAllByAssociatedId('beehive', 'apiary_id = :apiary_id', array(':apiary_id' => $apiary_id));
+		$entities = Database::FindAllByAssociatedId('beehive', 'apiary_id = :apiary_id', array(':apiary_id' => $apiary_id));
 		
-		return $allBeehives;
+		foreach ($entities as $entity)
+		{
+			self::$_entities[] = new Beehive($entity->id, $entity->name);
+		}
+
+		return self::$_entities;
 	}
 
 	public static function FindById($id)

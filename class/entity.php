@@ -56,6 +56,11 @@ class Entity {
 
 		return $success;
 	}
+
+	public function GetId()
+	{
+		return $this->_id;
+	}
 }
 
 ?>

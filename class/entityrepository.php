@@ -11,13 +11,16 @@
 **/
 class EntityRepository
 {
-	private static $_entities;
+	protected static $_entities;
 
 	public static function FindAll($entityName)
 	{
 		//TO be improved to add caching on Entities
-		if (self::$_entities == null || empty(self::$_entities)) {
-			self::$_entities = Database::FindAll($entityName, '');
+		$entities = Database::FindAll($entityName, '');
+		
+		foreach ($entities as $entity)
+		{
+			self::$_entities[] = new Entity($entity->id);
 		}
 
 		return self::$_entities;			

@@ -8,10 +8,10 @@
 **/
 class Post extends Entity
 {
-	private $_title;
-	private $_content;
-	private $_date;
-	private $_user_id;
+	protected $_title;
+	protected $_content;
+	protected $_date;
+	protected $_user_id;
 
 	public function __construct($id, $title, $content, $date, $user_id)
 	{

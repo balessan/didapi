@@ -1,0 +1,16 @@
+<h2>Liste des messages reçus</h2>
+
+<table class="table">
+	<thead>
+		<th>Nom</th>
+		<th>Mail</th>
+		<th>Lien</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="message in messages">
+			<td>{{message.name}}</td>
+			<td>{{message.email}}</td>
+			<td><a href="contact/{{message.id}}">Détail</a></td>
+		</tr>
+	</tbody>
+</table>

@@ -10,6 +10,22 @@ require_once __DIR__ . '/entity.php';
 **/
 class Contact extends Entity 
 {
+	protected $_name;
+	protected $_email;
+	protected $_phone;
+	protected $_firstname;
+	protected $_comment;
+
+	public function __construct($id, $name, $firstname, $email, $phone, $comment)
+	{
+		parent::__construct($id);
+		$this->_name = $name;
+		$this->_firstname = $firstname;
+		$this->_email = $email;
+		$this->_phone = $phone;
+		$this->_comment = $comment;
+	}
+
 	public function SaveEntity($post) 
 	{
 		$success = false;
@@ -20,12 +36,7 @@ class Contact extends Entity
 
 		return $success;
 	}
-	
-	public function Hello()
-	{
-		echo 'Hello body';
-	}
-	
+
 	private	function SendContactMail()
 	{
 		$from    = $this->_entity->email;

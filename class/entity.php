@@ -40,6 +40,19 @@ class Entity {
 			Database::Save($this->_entity);
 		}		
 	}
+	
+	public function toArray()
+	{
+		$result = array();
+
+		foreach($this as $property => $value)
+		{
+			$property = trim($property, '_');
+			$result[$property] = $value;
+		}
+
+		return $result;
+	}
 
 	// Base Method to be used for saving to Database purpose
 	private function SaveWithParameters($post, $entityName) 

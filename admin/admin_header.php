@@ -15,7 +15,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html ng-app="management-system">
 	<head>
 		<title>Didier Alessandroni - Apiculteur</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +35,9 @@
 			<script src="<?php echo $include_path; ?>includes/js/base.js"></script>
 			<script src="<?php echo $include_path; ?>library/ckeditor/ckeditor.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/jquery-ui/jquery-ui-min.js"></script>
+			<script src="<?php echo $include_path; ?>includes/js/angular.min.js"></script>
+			<script src="<?php echo $include_path; ?>includes/js/angular/management-system.js"></script>
+			<script src="<?php echo $include_path; ?>includes/js/angular/management-system-controllers.js"></script>
 			
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
@@ -47,7 +50,7 @@
 									{
 										echo '<a href="' . $include_path . 'profile.php" class="navbar-link">';
 										echo "Bonjour ";
-										echo $_SESSION['username'];
+										echo $currentUser->GetUsername();
 										echo ' !</a>';
 									}      
 									else echo '<a href="' . $include_path . 'login.php">Non connecté</a>';
@@ -63,6 +66,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="admin-panel-wrapper">
 <?php
 	}
 ?>

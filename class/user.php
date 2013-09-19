@@ -42,6 +42,16 @@ Class User {
 		return $this->_name;
 	}
 
+	public function GetUsername()
+	{
+		return $this->_username;
+	}
+	
+	public function GetFullname()
+	{
+		return $this->_firstname . " " . $this->_name;
+	}
+
 	public function SetFirstname($firstname)
 	{
 		if ($this->_firstname != $firstname)

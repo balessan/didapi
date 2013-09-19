@@ -38,7 +38,6 @@
 										echo $_SESSION['username'];
 										echo '</a>';
 									}      
-									else echo '<a href="' . $include_path . 'login.php">Non connecté</a>';
 								?>
 							</p>	
 							<ul class="nav">

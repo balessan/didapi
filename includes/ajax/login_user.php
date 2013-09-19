@@ -1,10 +1,7 @@
 <?php
-	include_once('../../class/user.php');
 	include_once('../../globals.php');
 	
 	if (!isset($_SESSION)) { session_start(); }
-	
-	require('../../library/RedBeanORM/rb.php');
 	
 	$response = array();
 

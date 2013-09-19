@@ -1,4 +1,4 @@
-<?php include("../header.php") ?>
+<?php include("./admin_header.php") ?>
 
 <style> 
 #apiary_form

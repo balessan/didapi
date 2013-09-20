@@ -1,0 +1,17 @@
+<h2>Liste des articles publiés</h2>
+
+<table class="table">
+	<thead>
+		<th>Titre</th>
+		<th>Date</th>
+		<th>Lien</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="post in posts">
+			<td>{{post.title}}</td>
+			<td>{{post.date}}</a></td>
+			<td><a href="index.php#/post/edit/{{post.id}}">Détail</a></td>
+		</tr>
+	</tbody>
+</table>
+<a href="index.php#/post/new" class="btn btn-prinmary btn-small">Ecrire un article</a>

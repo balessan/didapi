@@ -57,9 +57,9 @@
 								?>
 							</p>	
 							<ul class="nav">
-							  <li><a href="./rucher.php"><i class="icon-file icon-white"></i> Vos ruchers</a></li>
-							  <li><a href="./news.php"><i class="icon-pencil icon- icon-white"></i> Vos news</a></li>
-							  <li><a href="./contact.php"><i class="icon-book icon-white"></i> Vos messages</a></li>
+							  <li><a href="./index.php#/apiary"><i class="icon-file icon-white"></i> Vos ruchers</a></li>
+							  <li><a href="./index.php#/post"><i class="icon-pencil icon- icon-white"></i> Vos actus</a></li>
+							  <li><a href="./index.php#/contact"><i class="icon-book icon-white"></i> Vos messages</a></li>
 							</ul>
 						</div>
 					</div>

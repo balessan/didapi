@@ -1,10 +1,14 @@
-<h1>{{message.name}} {{message.firstname}}</h1>
+<h1>Message de: {{message.name}} {{message.firstname}}</h1>
 
-<h2>Coordonnées:</h2>
+<h3>Coordonnées:</h3>
 <p>
-Mail: {{message.email}}<br>
-Téléphone: {{message.phone}}<br>
+<b>Mail:</b> <a href="mailto:{{message.email}}">{{message.email}}</a><br>
+<b>Téléphone:</b> {{message.phone}}<br>
 </p>
 
-<h2>Message:</h2>
+<h3>Message:</h3>
 <p>{{message.comment}}</p>
+
+<p>
+<a href="index.php#/contact" class="btn btn-primary btn-small">Retour à la liste des messages</a>
+</p>

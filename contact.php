@@ -59,14 +59,10 @@
 				</p>
 			</p>
 		</div>
-		
-		<div id="contact_table_wrapper">
-		</div>
 	</div>
 	
     <script type="text/javascript">
 		$(function(){
-			refreshContactTable();
 			locateSaintFlorent();
 			
 			$('#add_contact_submit').click(function(e){
@@ -95,10 +91,6 @@
 			});         
 		});
 		
-		function refreshContactTable(){
-			$('#contact_table_wrapper').load('./services/contact/list.php');
-		}
-			
 		function locateSaintFlorent()
 		{
 			stMap = new OpenLayers.Map( 'StFlo');

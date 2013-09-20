@@ -1,0 +1,38 @@
+<h1>{{post.title}}</h1>
+
+<form name="editPostForm">
+	<fieldset>
+		<legend>Formulaire d'édition</legend>
+		<div class="control-group form-group" ng-class="{error: editPostForm.title.$invalid}">
+			<label>Titre</label>
+			<input class="form-control" type="text" name="title" ng-model="post.title" required>
+			<span ng-show="editPostForm.title.$error.required" class="help.inline">
+				Required
+			</span>
+		</div>
+
+		<label>Texte</label>
+		<textarea rows="10" style="width: 100%;" class="ckeditor" name="content" ng-model="post.content" />
+
+		<div class="control-group">
+			<a href="index.php#/post" class="btn">Retour à la liste des articles</a>
+			<span style="float: right; text-align: right;">
+				<button style="display: inline;" ng-click="save()" ng-disabled="isClean() || editPostForm.$invalid" class="btn btn-primary" >Enregistrer</button>
+				<button style="display: inline;" ng-click="delete()" ng-show="post.id" class="btn btn-danger">
+					Supprimer
+				</button>
+			</span>
+		</div>
+</form>
+
+<style>
+	.control-group {
+		margin-top: 10px;
+	}	
+</style>
+
+<script>
+	$(function(){
+		CKEDITOR.replace('content');
+	});
+</script>

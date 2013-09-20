@@ -49,5 +49,7 @@
 	}
  	
 	spl_autoload_register('classLoader');
+	
+	if (!isset($_SESSION)) { session_start(); }
 ?>
 

@@ -13,13 +13,18 @@ class Post extends Entity
 	protected $_date;
 	protected $_user_id;
 
-	public function __construct($id, $title, $content, $date, $user_id)
+	public function __construct($id = null, $title = null, $content = null, $date = null, $user_id = null)
 	{
-		parent::__construct($id);
-		$this->_content = $content;
-		$this->_title = $title;
-		$this->_date = $date;
-		$this->_user_id = $user_id;
+		if (isset($id)) parent::__construct($id);
+		if (isset($content)) $this->_content = $content;
+		if (isset($title)) $this->_title = $title;
+		if (isset($date)) $this->_date = $date;
+		if (isset($user_id)) $this->_user_id = $user_id;
+	}
+
+	public function Save($data)
+	{
+		return parent::Save($data, 'post');
 	}
 
 	public function GetTitle()

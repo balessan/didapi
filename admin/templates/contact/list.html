@@ -8,9 +8,9 @@
 	</thead>
 	<tbody>
 		<tr ng-repeat="message in messages">
-			<td>{{message.name}}</td>
-			<td>{{message.email}}</td>
-			<td><a href="contact/{{message.id}}">Détail</a></td>
+			<td>{{message.name}} {{message.firstname}} </td>
+			<td><a href="mailto:{{message.email}}">{{message.email}}</a></td>
+			<td><a href="index.php#/contact/{{message.id}}">Détail</a></td>
 		</tr>
 	</tbody>
 </table>

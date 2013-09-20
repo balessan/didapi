@@ -2,7 +2,7 @@ function ContactListController($scope, $http, $templateCache) {
 	$scope.orderProp = 'date';
 
 	var method = "GET";
-	var url = "../services/contact/load_list.php";
+	var url = "../services/contact/list.php";
 
 	$http({
 		method: method,
@@ -17,21 +17,66 @@ function ContactListController($scope, $http, $templateCache) {
 	});
 }
 
-function ContactDetailController($scope, $routeParams) {
+function ContactDetailController($scope, $http, $routeParams) {
 	$scope.messageId = $routeParams.id;
+
+	$http.get('../services/contact/detail.php?id=' + $scope.messageId).success(function(data){
+		$scope.message = data;
+	});
 }
 
-function NewsListController() {
+function PostListController($scope, $http) {
+	$http.get('../services/post/list.php').success(function(data){
+		$scope.posts = data;
+	});
 }
 
-function NewsDetailController() {
+function PostDetailController($scope, $http, $routeParams) {
+	$scope.postId = $routeParams.id;
+
+	$http.get('../services/post/detail.php?id=' + $scope.postId).success(function(data){
+		$scope.post = data;
+	});
 }
 
-function ApiaryListController() {
+function PostNewController($scope, $http) {
+	$scope.save = function(){
+		var data = { 
+			title: $scope.post.title,
+			content: $scope.post.content
+		};
+
+		$http({
+			url: '../services/post/save.php',
+			method: 'POST',
+			data: data,
+			headers: {'Content-Type' : 'application/data'} 
+		}).success(function(data){
+			$scope.message = data;
+		}).error(function(data){
+			$scope.errorMessage = data;
+		});
+	};
 }
 
-function ApiaryDetailController() {
+function ApiaryListController($scope, $http) {
+	$http.get('../services/apiary/list.php').success(function(data){
+		$scope.apiaries = data;
+	});
 }
 
-function BeehiveDetailController() {
+function ApiaryDetailController($scope, $http) {
+	$scope.apiaryId = $routeParams.id;
+
+	$http.get('../services/apiary/detail.php' + $scope.apiaryId).success(function(data){
+		$scope.apiary = data;
+	});
+}
+
+function BeehiveDetailController($scope, $http) {
+	$scope.beehiveId = $routeParams.id;
+
+	$http.get('../services/beehive/detail.php' + $scope.beehiveId).success(function(data){
+		$scope.beehive = data;
+	});
 }

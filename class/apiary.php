@@ -21,13 +21,9 @@ class Apiary extends Entity
 		$this->_beehives = $beehives;
 	}
 
-	public function Save($post)
+	public function Save($data)
 	{
-		$success = false;
-
-		$success = parent::Save($post, 'apiary');
-
-		return $success;
+		return parent::Save($data, 'apiary');
 	}
 
 	public function GetName()

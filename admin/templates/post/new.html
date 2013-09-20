@@ -1,0 +1,29 @@
+<h1>{{post.title}}</h1>
+
+<form name="newPostForm">
+	<fieldset>
+		<legend>Ecrire un nouvel article</legend>
+		<div class="control-group form-group" ng-class="{error: newPostForm.title.$invalid}">
+			<label>Titre</label>
+			<input class="form-control" type="text" name="title" ng-model="post.title" required>
+			<span ng-show="newPostForm.title.$error.required" class="help.inline">
+				Required
+			</span>
+		</div>
+
+		<label>Texte</label>
+		<textarea rows="10" style="width: 100%;" ck-editor ng-model="post.content"></textarea>
+
+		<div class="control-group">
+			<a href="index.php#/post" class="btn">Retour à la liste des articles</a>
+			<span style="float: right; text-align: right;">
+				<button style="display: inline;" ng-click="save()" ng-disabled="isClean() || editPostForm.$invalid" class="btn btn-primary" >Enregistrer</button>
+			</span>
+		</div>
+</form>
+
+<style>
+	.control-group {
+		margin-top: 10px;
+	}	
+</style>

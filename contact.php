@@ -80,7 +80,7 @@
 				});
 				
 				$.ajax({
-				  url: './includes/ajax/save_contact.php',
+				  url: './services/contact/save.php',
 				  type: 'POST',
 				  data: $("#contact_form").serialize(),
 				  dataType: 'json',
@@ -96,7 +96,7 @@
 		});
 		
 		function refreshContactTable(){
-			$('#contact_table_wrapper').load('./includes/ajax/load_contact_list.php');
+			$('#contact_table_wrapper').load('./services/contact/list.php');
 		}
 			
 		function locateSaintFlorent()

@@ -2,7 +2,7 @@ function MyBlogListController($scope, $http, $templateCache) {
 	$scope.orderProp = 'date';
 
 	var method = "GET";
-	var url = "./includes/ajax/load_post_list.php";
+	var url = "./services/post/list.php";
 
 	$scope.RetrieveAll = function() {
 		$http({

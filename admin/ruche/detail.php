@@ -110,7 +110,7 @@
 					$form = $(this).closest('form');
 					
 					$.ajax({
-						url: '../../includes/ajax/ruche/save_recolte.php',
+						url: '../../services/ruche/save_recolte.php',
 						type: 'POST',
 						data: $("#recolte_form").serialize(),
 						dataType: 'json',
@@ -156,7 +156,7 @@
 			$form = $(this).closest('form');
 
 			$.ajax({
-       				url: '../../includes/ajax/ruche/save_recolte.php',
+       				url: '../../services/ruche/save_recolte.php',
                         	type: 'POST',
                         	data: $("#recolte_form").serialize(),
                         	dataType: 'json',
@@ -177,7 +177,7 @@
 			$form = $(this).closest('form');
 
 			$.ajax({
-       				url: '../../includes/ajax/ruche/save_controle.php',
+       				url: '../../services/ruche/save_controle.php',
                         	type: 'POST',
                         	data: $("#controle_form").serialize(),
                         	dataType: 'json',
@@ -195,11 +195,11 @@
 	});
 
 	function refreshRecolteTable() {
-		$('#ruche_recolte_wrapper').load('../../includes/ajax/ruche/load_recolte_list.php?ruche_id=' + $('#recolte-ruche-id').val(), '');
+		$('#ruche_recolte_wrapper').load('../../services/ruche/load_recolte_list.php?ruche_id=' + $('#recolte-ruche-id').val(), '');
 	}
 
 	function refreshControleTable() {
-		$('#ruche_controle_wrapper').load('../../includes/ajax/ruche/load_controle_list.php?ruche_id=' + $('#controle-ruche-id').val(), '');
+		$('#ruche_controle_wrapper').load('../../services/ruche/load_controle_list.php?ruche_id=' + $('#controle-ruche-id').val(), '');
 	}
 </script>
 

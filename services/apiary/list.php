@@ -116,7 +116,7 @@
 		
 		$('.selectCheckboxFor' + apiaryId).each(function(){
 			if($(this).is('checked')){
-				$.get('../includes/ajax/delete_ruche.php', { ruche_id: $(this).val() }.done(function() {
+				$.get('../services/beehive/delete.php', { ruche_id: $(this).val() }.done(function() {
 						$('#delete_beehives_of' + apiaryId).before("<p>Success</p>");
 					}).fail(function() {
 						$('#delete_beehives_of' + apiaryId).before("<p>There was an error processing your request.</p>");
@@ -132,7 +132,7 @@
 		$form = $('#new_beehive_form' + apiaryId);
 		
 		$.ajax({
-			url: '../includes/ajax/save_beehive.php',
+			url: '../services/beehive/save.php',
 			type: 'POST',
 			data: $('#new_beehive_form' + apiaryId).serialize(),
 			dataType: 'json',
@@ -152,7 +152,7 @@
 
 	function refreshBeehiveTable(apiaryId)
 	{
-		$('#beehive_table_wrapper' + apiaryId).load('../includes/ajax/load_beehive_list.php?apiary_id=' + apiaryId, '');
+		$('#beehive_table_wrapper' + apiaryId).load('../services/beehive/list.php?apiary_id=' + apiaryId, '');
 	}
 </script>
 

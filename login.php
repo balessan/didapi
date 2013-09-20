@@ -38,7 +38,7 @@
 					$form = $(this).closest('form');
 					
 					$.ajax({
-					  url: './includes/ajax/login_user.php',
+					  url: './services/user/login.php',
 					  type: 'POST',
 					  data: $("#login_form").serialize(),
 					  dataType: 'json',
@@ -60,7 +60,7 @@
 				$form = $(this).closest('form');
 				
 				$.ajax({
-				  url: './includes/ajax/create_user.php',
+				  url: './services/user/create.php',
 				  type: 'POST',
 				  data: $("#user_form").serialize(),
 				  dataType: 'json',

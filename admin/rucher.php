@@ -54,7 +54,7 @@
 			$form = $(this).closest('form');
 
 			$.ajax({
-       				url: '../includes/ajax/save_apiary.php',
+       				url: '../services/apiary/save.php',
                         	type: 'POST',
                         	data: $("#apiary_form").serialize(),
                         	dataType: 'json',
@@ -72,11 +72,11 @@
 	});
 	
 	function refreshApiaryTable(){
-		$('#apiary_table_wrapper').load(decodeURIComponent('../includes/ajax/load_apiary_list.php', ''));
+		$('#apiary_table_wrapper').load(decodeURIComponent('../services/apiary/list.php', ''));
 	}
 
 	function refreshBeehiveTable(apiaryId){
-		$('#beehive_table_wrapper' + apiaryId).load(decodeURIComponent('includes/ajax/load_beehive_list.php?apiary_id=' . apiaryId , ''));
+		$('#beehive_table_wrapper' + apiaryId).load(decodeURIComponent('../services/beehive/list.php?apiary_id=' . apiaryId , ''));
 	}
 
 </script>

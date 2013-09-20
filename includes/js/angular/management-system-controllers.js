@@ -2,7 +2,7 @@ function ContactListController($scope, $http, $templateCache) {
 	$scope.orderProp = 'date';
 
 	var method = "GET";
-	var url = "../includes/ajax/load_contact_list.php";
+	var url = "../services/contact/load_list.php";
 
 	$http({
 		method: method,

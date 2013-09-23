@@ -12,10 +12,10 @@
 	  $contact = new Contact();
 	  
 	  // always return true if you save the contact data ok or false if it fails
-	  $response['status'] = $contact->SaveEntity($post) ? 'success' : 'error';
+	  $response['status'] = $contact->Save($post) ? 'success' : 'error';
 	  $response['message'] = $response['status']
-		  ? utf8_decode('Votre message a bien été sauvegardé!')
-		  : utf8_decode('Il y a eu un problème lors de la sauvegarde du message.');
+		  ? 'Votre message a bien été sauvegardé!'
+		  : 'Il y a eu un problème lors de la sauvegarde du message.';
 
 	  header('Content-type: application/json');
 	  echo json_encode($response);

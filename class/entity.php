@@ -40,6 +40,18 @@ class Entity {
 			Database::Save($this->_entity);
 		}		
 	}
+
+	public function Update($entityName, $data)
+	{
+		$success = false;
+
+		if (isset($data) && !empty($data))
+		{
+			$success = Database::Update($entityName, $this->_id, $data);
+		}
+
+		return $success;
+	}
 	
 	public function toArray()
 	{
@@ -61,6 +73,8 @@ class Entity {
 
 		$result = Database::Save(null, $post, $entityName);
 
+		echo $result;
+		
 		if (isset($result) && !empty($result))
 		{
 			$this->_entity = $result['entity'];
@@ -69,6 +83,7 @@ class Entity {
 			if (isset($this->_entity) && isset($this->_id))
 			{
 				$success = true;
+				echo $success;
 			}
 		}
 

@@ -27,6 +27,11 @@ class Post extends Entity
 		return parent::Save($data, 'post');
 	}
 
+	public function Update($data)
+	{
+		return parent::Update('post', $data);
+	}
+
 	public function GetTitle()
 	{
 		return $this->_title;

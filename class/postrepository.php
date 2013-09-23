@@ -10,7 +10,7 @@ class PostRepository extends EntityRepository
 {
 	public static function FindAll()
 	{
-		$entities = Database::FindAll('post', '');
+		$entities = Database::FindAll('post');
 
 		foreach ($entities as $entity)
 		{
@@ -18,6 +18,15 @@ class PostRepository extends EntityRepository
 		}
 
 		return self::$_entities;
+	}
+
+	public static function FindById($id)
+	{
+		$redBeanEntity = parent::FindById('post', $id);
+	
+		$entity = new Post($redBeanEntity->id, $redBeanEntity->title, $redBeanEntity->content, $redBeanEntity->date, $redBeanEntity->user_id);
+
+		return $entity;
 	}
 }
 

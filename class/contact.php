@@ -16,33 +16,33 @@ class Contact extends Entity
 	protected $_firstname;
 	protected $_comment;
 
-	public function __construct($id, $name, $firstname, $email, $phone, $comment)
+	public function __construct($id = null, $name = null, $firstname = null, $email = null, $phone = null, $comment = null)
 	{
-		parent::__construct($id);
-		$this->_name = $name;
-		$this->_firstname = $firstname;
-		$this->_email = $email;
-		$this->_phone = $phone;
-		$this->_comment = $comment;
+		if (isset($id)) parent::__construct($id);
+		if (isset($name)) $this->_name = $name;
+		if (isset($firstname)) $this->_firstname = $firstname;
+		if (isset($email)) $this->_email = $email;
+		if (isset($phone)) $this->_phone = $phone;
+		if (isset($comment)) $this->_comment = $comment;
 	}
 
-	public function SaveEntity($post) 
+	public function Save($post) 
 	{
 		$success = false;
 
-		$success = parent::SaveEntity($post, 'contact');
+		$success = parent::Save($post, 'contact');
 
-		$this->SendContactMail();
+		//$this->SendContactMail();
 
 		return $success;
 	}
 
 	private	function SendContactMail()
 	{
-		$from    = $this->_entity->email;
+		$from    = $this->_email;
 		$to      = "postmaster@didapi.fr";
 		$subject = "Contact";
-		$body    = $this->_entity->comment;
+		$body    = $this->_comment;
 		
 		$host     = "smtp.didapi.fr";
 		$username = "postmaster@didapi.fr";

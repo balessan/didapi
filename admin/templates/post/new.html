@@ -15,6 +15,12 @@
 		<textarea rows="10" style="width: 100%;" ck-editor ng-model="post.content"></textarea>
 
 		<div class="control-group">
+			<p id="success" style="display: none;" class="text-success">
+				{{message}}
+			</p>
+			<p id="error" style="display: none;" class="text-error">
+				{{errorMessage}}
+			</p>
 			<a href="index.php#/post" class="btn">Retour à la liste des articles</a>
 			<span style="float: right; text-align: right;">
 				<button style="display: inline;" ng-click="save()" ng-disabled="isClean() || editPostForm.$invalid" class="btn btn-primary" >Enregistrer</button>

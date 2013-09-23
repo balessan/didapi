@@ -37,6 +37,26 @@ function PostDetailController($scope, $http, $routeParams) {
 	$http.get('../services/post/detail.php?id=' + $scope.postId).success(function(data){
 		$scope.post = data;
 	});
+
+	$scope.save = function(){
+		var data = {
+			id: $scope.post.id,
+			title: $scope.post.title,
+			content: $scope.post.content
+		};
+
+		$http({
+			url: '../services/post/udpate.php',
+			method: 'POST',
+			data: data,
+			headers: {'Content-Type' : 'application/data'}
+		}).success(function(data){
+			$scope.message = data;
+		}).error(function(data){
+			$scope.errorMessage = data;
+		});
+
+	};
 }
 
 function PostNewController($scope, $http) {
@@ -53,8 +73,11 @@ function PostNewController($scope, $http) {
 			headers: {'Content-Type' : 'application/data'} 
 		}).success(function(data){
 			$scope.message = data;
+			$('#success').show();
+
 		}).error(function(data){
 			$scope.errorMessage = data;
+			$('#error').show();
 		});
 	};
 }

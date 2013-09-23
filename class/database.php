@@ -17,16 +17,6 @@ class Database
 	const HOST     = 'localhost';
 	const USERNAME = 'root';
 	
-	public static function Connect()
-	{
-		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
-	}
-
-	public static function Close()
-	{
-		R::close();
-	}
-
 	public static function FindAll($entityName)
 	{	
 		self::Connect();
@@ -49,6 +39,19 @@ class Database
 		return $entity;
 	}
 
+	public static function Update($entityName, $id, $data)
+	{
+		$entity = self::FindById($entityName, $id);
+
+		$entity = self::SetAttributes($entity, $data);		
+
+		$success = self::Store($entity);
+		
+		self::Close();
+		
+		return $success == true ? array('entity' => $entity, 'entity_id' => $id) : false;
+	}
+
 	public static function Save($entity, $post = null, $entityName = null)
 	{
 		$result = false;
@@ -63,6 +66,19 @@ class Database
 		}
 		
 		return $result;
+	}
+
+	public static function FindAllByAssociatedId($entityName, $selectorsName, $selectorsValue)
+	{
+		$allEntities = false;
+
+		self::Connect();
+
+		$allEntities = R::find($entityName, $selectorsName, $selectorsValue);
+
+		self::Close();
+		
+		return $allEntities != false ? $allEntities : false;
 	}
 
 	private static function SaveEntity($entity)
@@ -88,29 +104,21 @@ class Database
 		
 		$entity = self::SetAttributes($entity, $post);		
 
-		$id = R::store($entity);
-		
-		if ($id != null)
-		{
-			$success = true;
-		}
-
+		$success = self::Store($entity);
+		echo $success;	
 		self::Close();
 		
 		return $success == true ? array('entity' => $entity, 'entity_id' => $id) : false;
 	}
 
-	public static function FindAllByAssociatedId($entityName, $selectorsName, $selectorsValue)
+	protected static function Connect()
 	{
-		$allEntities = false;
+		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
+	}
 
-		self::Connect();
-
-		$allEntities = R::find($entityName, $selectorsName, $selectorsValue);
-
-		self::Close();
-		
-		return $allEntities != false ? $allEntities : false;
+	protected static function Close()
+	{
+		R::close();
 	}
 
 	protected static function SetAttributes($entity, $post)
@@ -124,6 +132,16 @@ class Database
 		}
 
 		return $entity;
+	}
+
+	protected static function Store($entity)
+	{
+		$id = R::store($entity);
+		
+		if ($id != null)
+		{
+			$success = true;
+		}
 	}
 	
 }

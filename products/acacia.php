@@ -38,8 +38,8 @@
 					</select>
 				</p>
 				<p>
-					Prix:
-					<span class="product-price-value"></span>
+					<!--Prix:
+					<span class="product-price-value"></span>-->
 				</p>
 			</div>
 		</div>

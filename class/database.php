@@ -1,8 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../library/RedBeanORM/rb.php';	
-require_once __DIR__ . '/utility.php';	
-
 /**
 *
 * Database class used to query the RedBean ORM for objects
@@ -21,7 +18,7 @@ class Database
 	{	
 		self::Connect();
 
-		$entities = R::findAll($entityName, '');
+		$entities = RedBean_Facade::findAll($entityName, '');
 
 		self::Close();	
 	
@@ -32,7 +29,7 @@ class Database
 	{
 		self::Connect();
 		
-		$entity = R::load($entityName, $id);
+		$entity = RedBean_Facade::load($entityName, $id);
 
 		self::Close();
 
@@ -74,7 +71,7 @@ class Database
 
 		self::Connect();
 
-		$allEntities = R::find($entityName, $selectorsName, $selectorsValue);
+		$allEntities = RedBean_Facade::find($entityName, $selectorsName, $selectorsValue);
 
 		self::Close();
 		
@@ -87,7 +84,7 @@ class Database
 
 		self::Connect();		
 
-		$saved_id = R::store($entity);
+		$saved_id = RedBean_Facade::store($entity);
 
 		self::Close();
 
@@ -100,7 +97,7 @@ class Database
 
 		self::Connect();
 
-		$entity = R::dispense($entityName);
+		$entity = RedBean_Facade::dispense($entityName);
 		
 		$entity = self::SetAttributes($entity, $post);		
 
@@ -113,12 +110,12 @@ class Database
 
 	protected static function Connect()
 	{
-		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
+		RedBean_Facade::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 	}
 
 	protected static function Close()
 	{
-		R::close();
+		RedBean_Facade::close();
 	}
 
 	protected static function SetAttributes($entity, $post)
@@ -136,7 +133,7 @@ class Database
 
 	protected static function Store($entity)
 	{
-		$id = R::store($entity);
+		$id = RedBean_Facade::store($entity);
 		
 		if ($id != null)
 		{

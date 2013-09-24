@@ -1,10 +1,7 @@
 <?php
-	echo 'LAAAA';
 	include_once('../../globals.php');
-	require_once('../../library/RedBeanORM/rb.php');
-	
 	$ruche_id = $_GET["ruche_id"];
-	echo $ruche_id;
+	
 	if (isset($ruche_id))
 	{	
 		if($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -31,7 +28,6 @@
 	}
 
 	function deleteRuche($data) {
-		echo 'LAAAA';	
 		$success = false;
 
 		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);

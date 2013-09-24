@@ -69,6 +69,11 @@ class Contact extends Entity
 			echo ("<p>Message successfully sent</p>");
 		}
 	}
+
+	public function getName()
+	{
+		return $this->_name;
+	}
 }
 
 ?>

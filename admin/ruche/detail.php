@@ -1,7 +1,5 @@
 <?php
-	require('../../library/RedBeanORM/rb.php');
 	include_once('../../globals.php');
-	include('../../header.php');
 			
 	R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 	

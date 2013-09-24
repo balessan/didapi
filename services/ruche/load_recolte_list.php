@@ -1,7 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <?php
-	require_once('../../../library/RedBeanORM/rb.php');
 	include_once('../../../globals.php');
 			
 	R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);

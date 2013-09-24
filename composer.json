@@ -1,6 +1,12 @@
 {
 	"require": {
 		"monolog/monolog": "1.0.*",
-		"patchwork/utf8": "1.1.*"
+		"patchwork/utf8": "1.1.*",
+		"phpunit/phpunit": "3.7.27",
+		"gabordemooij/redbean": "dev-master",
+		"twitter/bootstrap": "v2.3.2"
+	},
+	"autoload": {
+		"classmap": [ "class/" ]
 	}
 }

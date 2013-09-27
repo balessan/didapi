@@ -32,10 +32,10 @@
 						<option value="1000">1Kg</option>
 					</select>
 				</p>
-				<p>
+				<!--<p>
 					Prix:
 					<span class="product-price-value"></span>
-				</p>
+				</p>-->
 			</div>
 		</div>
 	</div>

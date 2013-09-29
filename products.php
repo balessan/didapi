@@ -61,7 +61,7 @@
 
 				<div id="printemps" class="span5 products">
 					
-					<div style="text-align:center;"><a href="./products/printemps.php"><img class="img-circle" src="./includes/img/pot/acacia_min.JPG" /></a></div>
+					<div style="text-align:center;"><a href="./products/printemps.php"><img class="img-circle" src="./includes/img/pot/printemps_min.JPG" /></a></div>
 					<h3>Printemps</h3>
 					<p class="products-resume">
 						Le best-seller ! Le miel souvent présenté sous l'appelation "Miel du Gatînais", constitué majoritairement de Colza

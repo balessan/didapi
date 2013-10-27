@@ -64,3 +64,15 @@ body
 	margin-top: 40px;
 }
 
+.products-photo {
+	text-align: center;
+	padding: 10px;
+}
+
+.products-photo img {
+	width: 100%;
+}
+
+.products-image {
+	text-align: center;
+}

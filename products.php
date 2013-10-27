@@ -164,7 +164,7 @@
 				<h2 id="produits">Produits de la ruche</h2>
 				<div id="pain_epices" class="span5 products">
 					<div class="products-header">
-						<a href="./products/pain_epices.php"><img class="img-circle" src="" /></a>
+						<a href="./products/pain_epices.php"><img class="img-circle" src="<?php echo $include_path; ?>/includes/img/derives/pain_epices_min.jpg" /></a>
 						<h3>Pain d'épices</h3>
 					</div>
 					<p class="products-resume">

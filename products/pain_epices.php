@@ -2,25 +2,27 @@
 
 <div class="row-fluid">
 	<div class="span4 products-photo" style="padding-top: 15px;">
-		<img src="<?php echo $include_path; ?>/includes/img/derives/bonbon_boule.JPG" class="img-circle" alt="Photo de nos bonbons au miel">
+		<img class="img-circle" src="<?php echo $include_path; ?>/includes/img/derives/pain_epices.jpg" alt="Photo de notre gros pain d'épices">
 	</div>
 
 	<div class="span8">
 		<div class="row-fluid">
-			<h1>Bonbons au miel</h1>
+			<h1>Pain d'epices</h1>
 		</div>
 		<div class="row-fluid">
 			<h2>Description</h2>
 			<p>
-				Les bonbons au miel sont des produits dérivés récemment introduits dans la palette que nous proposons.<br>
-				Ce sont de véritables douceurs, aussi bien pour le palais que pour la gorge.<br>
+				Un bon pain d'épices ne se réussit pas sans un bon miel ! C'est traditionnellement le miel de sarrasin qui est utilisé pour la 
+				confection de celui-ci aux côtés de la cannelle et de la noix de muscade, auxquelles il apporte son caractère et ses notes généreuses de 
+				céréales, et de sucre brun.<br>
+				On peut aussi proposer une variante assorties de petits morceaux de gingembre confits. Miam !<br><br>
+				Un régal pour le goûter ou pour un petit creu !
 			</p>
 			<p>
 				Quantite:
 				<select class="product-price-select">
-					<option value="250" selected="selected">250g</option>
-					<option value="500">500g</option>
-					<option value="1000">1Kg</option>
+					<option value="150" selected="selected">150g</option>
+					<option value="400">400g</option>
 				</select>
 			</p>
 			<!--<p>

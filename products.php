@@ -9,11 +9,9 @@
 		overflow: hidden;
 	}
 	
-	.products h3, .products .link {
+	.products-header, .products-link {
 		text-align: center;
 	}
-	
-		
 </style>
 
 <div class="container-fluid">
@@ -29,13 +27,12 @@
 					<li><a href="#foret">Forêt</a></li>
 					<li class="nav-header"><a href="#genereux">Miels généreux</a></li>
 					<!--<li><a href="#oignon">Oignon</a></li>-->
-					<li><a href="#chataigner">Châtaigner</a></li>
+					<li><a href="#chataignier">Châtaignier</a></li>
 					<li><a href="#sarrasin">Sarrasin</a></li>
 					<li class="nav-header"><a href="#produits">Produits de la ruche</a></li>
 					<li><a href="#pain_epices">Pain d'épices</a></li>
-					<!--<li><a href="#gelee">Gelée Royale</a></li>
-					<li><a href="#propolis">Propolis</a></li>
-					<li><a href="#autres">Autres...</a></li>-->
+					<li><a href="#caramiel">Caramiel</a></li>
+					<li><a href="#bonbon">Bonbons au miel</a></li>
 				</ul>
 			</div>
 		</div>
@@ -60,25 +57,29 @@
 				<h2 id="doux">Miels doux</h2>
 
 				<div id="printemps" class="span5 products">
-					
-					<div style="text-align:center;"><a href="./products/printemps.php"><img class="img-circle" src="./includes/img/pot/printemps_min.JPG" /></a></div>
-					<h3>Printemps</h3>
+					<div class="products-header">
+						<a href="./products/printemps.php"><img class="img-circle" src="./includes/img/pot/printemps_min.JPG" /></a>
+						<h3>Printemps</h3>
+					</div>
 					<p class="products-resume">
 						Le best-seller ! Le miel souvent présenté sous l'appelation "Miel du Gatînais", constitué majoritairement de Colza
-					<p class="link">
+					</p>
+					<p class="products-link">
 						<a class="btn" href="./products/printemps.php">Détails</a>
 					</p>
 				</div>
 			
 				<div id="acacia" class="span5 products">
-						<div style="text-align:center;"><a href="./products/acacia.php"><img class="img-circle" src="./includes/img/pot/acacia_min.JPG" /></a></div>
+					<div class="products-header">
+						<a href="./products/acacia.php"><img class="img-circle" src="./includes/img/pot/acacia_min.JPG" /></a>
 						<h3>Acacia</h3>
-						<p class="products-resume">
-							Deuxième tête d'affiche ! Et le miel naturellement le plus sucré et le plus doux...
-						</p>
-						<p class="link">
-							<a class="btn" href="./products/acacia.php">Détails</a>
-						</p>
+					</div>
+					<p class="products-resume">
+						Deuxième tête d'affiche ! Et le miel naturellement le plus sucré et le plus doux...
+					</p>
+					<p class="products-link">
+						<a class="btn" href="./products/acacia.php">Détails</a>
+					</p>
 				</div>
 			</div>
 			
@@ -86,23 +87,27 @@
 				<h2 id="equilibre">Miels équilibrés</h2>
 				
 				<div id="fleurs" class="span5 products">
-					<div style="text-align:center;"><a href="./products/fleurs.php"><img class="img-circle" src="./includes/img/pot/fleurs_min.JPG" /></a></div>
-					<h3>Toutes fleurs</h3>
+					<div class="products-header">
+						<a href="./products/fleurs.php"><img class="img-circle" src="./includes/img/pot/fleurs_min.JPG" /></a>
+						<h3>Toutes fleurs</h3>
+					</div>
 					<p class="products-resume">
 						Le miel le plus consommé à  l'échelle de la planète. Un mélange de goût et d'odeurs, et une texture facile à tartiner...
 					</p>
-					<p class="link">
+					<p class="products-link">
 						<a class="btn" href="./products/fleurs.php">Détails</a>
 					</p>
 				</div>	
 			
 				<div id="foret" class="span5 products">
-					<div style="text-align:center;"><a href="./products/foret.php"><img class="img-circle" src="./includes/img/pot/foret_min.JPG" /></a></div>
-					<h3>Forêt</h3>
+					<div class="products-header">
+						<a href="./products/foret.php"><img class="img-circle" src="./includes/img/pot/foret_min.JPG" /></a>
+						<h3>Forêt</h3>
+					</div>
 					<p class="products-resume">
 						Un miel légèrement amer, qui réserve des surprises, comme une belle balade. Pour les amateurs, ou les curieux !
 					</p>
-					<p class="link">
+					<p class="products-link">
 						<a class="btn" href="./products/foret.php">Détails</a>
 					</p>
 				</div>
@@ -123,67 +128,80 @@
 					</p>
 				</div>-->
 				
-				<div id="chataigner" class="span5 products">
-					<div style="text-align:center;"><a href="./products/chataigner.php"><img class="img-circle" src="./includes/img/pot/chataigner_min.JPG" /></a></div>
-					<h3>Chataigner</h3>
+				<div id="chataignier" class="span5 products">
+					<div class="products-header">
+						<a href="./products/chataignier.php"><img class="img-circle" src="./includes/img/pot/chataigner_min.JPG" /></a>
+						<h3>Chataignier</h3>
+					</div>
 					<p class="products-resume">
 						Un miel corsé connu pour sa petite pointe d'amertume qui le rend unique !
 					</p>
-					<p class="link">
-						<a class="btn" href="./products/chataigner.php">Détails</a>
+					<p class="products-link">
+						<a class="btn" href="./products/chataignier.php">Détails</a>
 					</p>
 				</div>
 				
 				<div id="sarrasin" class="span5 products">
-					<div style="text-align:center;"><a href="./products/sarrasin.php"><img class="img-circle" src="./includes/img/pot/sarrasin_min.JPG" /></a></div>
-					<h3>Sarrasin</h3>
+					<div class="products-header">
+						<a href="./products/sarrasin.php"><img class="img-circle" src="./includes/img/pot/sarrasin_min.JPG" /></a>
+						<h3>Sarrasin</h3>
+					</div>
 					<p class="products-resume">
 						Mon (le webmaster) préféré ! Un miel au goût et aux arômes inégalés, à découvrir ou redécouvrir...
 					</p>
-					<p class="link">
+					<p class="products-link">
 						<a class="btn" href="./products/sarrasin.php">Détails</a>
 					</p>
 				</div>
 			</div>	
-			
-					<br>
-					<p>
-					<b>NB</b> : Vous avez déjà remarqué que le miel a tendance à cristalliser (formation de cristaux de sucre) au bout d’un certain temps ? En réalité, ce phénomène est naturel et n’altère en rien les qualités du miel. La cristallisation survient plus ou moins rapidement selon le type de miel, et peut être prévenue en conservant vos pots dans un endroit bien sec, à l’abri de la lumière.
-					Si vous préférez votre miel sous forme liquide, faites chauffer votre pot au bain-marie, sans jamais dépasser les 40°.
-					</p>
-			
+			<div class="row-fluid">	
+				<p>
+				<b>NB</b> : Vous avez déjà remarqué que le miel a tendance à cristalliser (formation de cristaux de sucre) au bout d’un certain temps ? En réalité, ce phénomène est naturel et n’altère en rien les qualités du miel. La cristallisation survient plus ou moins rapidement selon le type de miel, et peut être prévenue en conservant vos pots dans un endroit bien sec, à l’abri de la lumière. Si vous préférez votre miel sous forme liquide, faites chauffer votre pot au bain-marie, sans jamais dépasser les 40°.
+				</p>
+			</div>
+
 			<div class="row-fluid">
 				<h2 id="produits">Produits de la ruche</h2>
-				<div id="epices" class="span5 products">
-					<a href="./products/pain-d-epices.php"><img class="img-circle" src="" /></a>
-					<h3>Pain d'épices</h3>
+				<div id="pain_epices" class="span5 products">
+					<div class="products-header">
+						<a href="./products/pain_epices.php"><img class="img-circle" src="" /></a>
+						<h3>Pain d'épices</h3>
+					</div>
 					<p class="products-resume">
-						<?php echo 'Le premier produit dérivé de la production de miel, le pain d\'épices ! Un régal pour les papilles au goûter, ou à toute heure de la journée !'; ?> 
+						Le premier produit dérivé de la production de miel, le pain d'épices ! Un régal pour les papilles au goûter, ou à toute heure de la journée !
 					</p>
-					<p>
-						<a class="btn" href="./products/pain-d-epices.php">Détails</a>
-					</p>
-				</div>
-				
-				<!--<div id="propolis" class="span4">
-					<h2>Propolis</h2>
-					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">DÃÂ©tails</a>
+					<p class="products-link">
+						<a class="btn" href="./products/pain_epices.php">Détails</a>
 					</p>
 				</div>
 				
-				<div id="autres" class="span4">
-					<h2>Autres</h2>
-					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+				<div id="epices" class="span5 products">
+					<div class="products-header">
+						<a href="./products/caramiel.php"><img class="img-circle" src="./includes/img/derives/caramiel_min.JPG" /></a>
+						<h3>Caramiel</h3>
+					</div>
+					<p class="products-resume">
+						Un petit nouveau ! Une douceur pour le petit déjeuner ou le goûter qui vous surprendra par sa saveur inattendue ! 
 					</p>
-					<p>
-						<a class="btn" href="#">DÃÂ©tails</a>
+					<p class="products-link">
+						<a class="btn" href="./products/caramiel.php">Détails</a>
 					</p>
-				</div>-->
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div id="bonbon" class="span5 products">
+					<div class="products-header">
+						<a href="./products/bonbon.php"><img class="img-circle" src="./includes/img/derives/bonbon_boule_min.JPG" /></a>
+						<h3>Bonbons au miel</h3>
+					</div>
+					<p class="products-resume">
+						Une production originale, pour une saveur sucrée qui ravira petits et grands !
+					</p>
+					<p class="products-link">
+						<a class="btn" href="./products/bonbon.php">Détails</a>
+					</p>
+				</div>
 			</div>
 		</div>
 </div>

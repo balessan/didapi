@@ -16,7 +16,7 @@
 				confection de celui-ci aux côtés de la cannelle et de la noix de muscade, auxquelles il apporte son caractère et ses notes généreuses de 
 				céréales, et de sucre brun.<br>
 				On peut aussi proposer une variante assorties de petits morceaux de gingembre confits. Miam !<br><br>
-				Un régal pour le goûter ou pour un petit creu !
+				Un régal pour le goûter ou pour un petit creux !
 			</p>
 			<p>
 				Quantite:

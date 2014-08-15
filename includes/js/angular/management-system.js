@@ -1,5 +1,5 @@
-angular.module('management-system', []).
-	config(['$routeProvider', function ($routeProvider) {
+angular.module('management-system', ['ngSanitize']).
+	config(['$routeProvider', '$sceProvider', function ($routeProvider, $sceProvider) {
 		$routeProvider
 			.when('/contact', {templateUrl: 'templates/contact/list.html', controller: ContactListController})
 			.when('/contact/:id', {templateUrl: 'templates/contact/detail.html', controller: ContactDetailController })
@@ -10,6 +10,8 @@ angular.module('management-system', []).
 			.when('/apiary/:id', {templateUrl: 'templates/apiary/detail.html', controller: ApiaryDetailController})
 			.when('/beehive/:id', {templateUrl: 'templates/beehive/detail.html', controller: BeehiveDetailController})
 			.otherwise({redirectTo: '/contact'});
+
+			$sceProvider.enabled(false);
 	}]);
 
 angular.module('management-system').directive('ckEditor', function() {

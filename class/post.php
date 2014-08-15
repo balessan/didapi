@@ -51,6 +51,15 @@ class Post extends Entity
 	{
 		return $this->_user_id;
 	}
+
+	public function toArray()
+	{
+		$result = parent::toArray();
+
+		$result['content'] = Utility::DecodeAsSafeString($result['content']);
+
+		return $result;
+	}
 }
 
 ?>

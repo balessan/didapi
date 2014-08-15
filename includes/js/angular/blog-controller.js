@@ -1,4 +1,4 @@
-function MyBlogListController($scope, $http, $templateCache) {
+function MyBlogListController($scope, $sce, $http, $templateCache) {
 	$scope.orderProp = 'date';
 
 	var method = "GET";
@@ -12,9 +12,16 @@ function MyBlogListController($scope, $http, $templateCache) {
 		}).success(function(data){
 			$scope.message = "Request OK";
 			$scope.posts = data;
+			for (var $post in $scope.posts) {
+				$post.content = deliberatelyTrustDangerousSnippet($post.content);
+			}
 		}).error(function(status){
 			$scope.status = status;
 			$scope.message = "Request Failed";
 		});
 	};
-}
+
+	function deliberatelyTrustDangerousSnippet($data) {
+		return $sce.trustAsHtml($data);
+	};
+};

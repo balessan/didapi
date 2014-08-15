@@ -1,7 +1,7 @@
 <?php include_once('./globals.php'); ?>	
 
 <!DOCTYPE html>
-<html ng-app ng-controller="MyBlogListController">
+<html ng-app=management-system ng-controller="MyBlogListController">
 	<head>
 		<title>Le Blog de l'apiculteur</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,12 @@
 			<script src="<?php echo $include_path; ?>includes/js/base.js"></script>
 			<script src="<?php echo $include_path; ?>library/ckeditor/ckeditor.js"></script>
 			<script src="<?php echo $include_path; ?>includes/js/jquery-ui/jquery-ui-min.js"></script>
-			
+			<script type="text/javascript" src="./includes/js/angular.min.js"></script>
+			<script type="text/javascript" src="./includes/js/angular.sanitize.min.js"></script>
+			<script type="text/javascript" src="./includes/js/angular/management-system.js"></script>
+			<script type="text/javascript" src="./includes/js/angular/blog-controller.js"></script>
+			<script type="text/javascript" src="./includes/js/angular/management-system-controllers.js"></script>
+				
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">
@@ -78,10 +83,6 @@
 	<head>
 	
 	<body ng-init="RetrieveAll()">
-		<script type="text/javascript" src="./includes/js/angular.min.js"></script>
-
-		<script type="text/javascript" src="./includes/js/angular/blog-controller.js"></script>
-
 		<style type="text/css">
 			.blog-title {
 				text-align: center;
@@ -115,8 +116,7 @@
 						<li class="post-item" ng-repeat="post in posts | filter:query | orderBy:orderProp">
 							<article>
 								<h2>{{post.title}}</h2>
-								<div class="post-content">
-									{{post.content}}
+								<div class="post-content" ng-bind-unsafe-html="{{post.content}}">
 								</div>
 								<p class="post-footer">Ecrit le {{post.date}} par {{post.user_id}}</p>
 								<p class="post-comments"><a href="./admin/post/{{post.id}}">Commentaires</a></p>

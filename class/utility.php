@@ -14,7 +14,19 @@
 			
 			if (isset($string))
 			{
-				$result = htmlspecialchars($string);
+				$result = htmlentities(htmlspecialchars($string));
+			}
+			
+			return $result;
+		}
+
+		public static function DecodeAsSafeString($string)
+		{
+			$result = null;
+		
+			if (isset($string))
+			{
+				$result = html_entity_decode(htmlspecialchars_decode($string));
 			}
 			
 			return $result;

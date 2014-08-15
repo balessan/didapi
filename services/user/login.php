@@ -22,11 +22,11 @@
 	{
 		$success = false;
 		
-		R::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
+		RedBean_Facade::setup('mysql:host=' . Database::HOST . ';dbname=' . Database::NAME, Database::USERNAME, Database::PASSWORD);
 			
 		//echo hash('sha256', $_POST['password']);
 		
-		$user = R::findOne('user', ' username = :username AND password = :password LIMIT 1', 
+		$user = RedBean_Facade::findOne('user', ' username = :username AND password = :password LIMIT 1', 
 				array( 	':username'=>$_POST['username'], 
 						':password'=> hash('sha256', $_POST['password'] ))
 		);

@@ -1,4 +1,5 @@
 <?php
+	include_once('../../globals.php');
 	$response = array();
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -19,14 +20,14 @@
 	{
 		$success = false;
 		
-		R::setup('mysql:host=localhost;
+		RedBean_Facade::setup('mysql:host=localhost;
 			dbname=didapi','root','');
 		
 	//$user = R::find('user', ' username = ?', array( 'admin') );
 		
 	//	if (!isset($user))
 	//	{
-			$user = R::dispense('user');
+			$user = RedBean_Facade::dispense('user');
 			
 			$user->username = 'admin';
 			$user->name = 'Admin';
@@ -34,7 +35,7 @@
 			$user->is_admin = true;
 			$user->password = hash('sha256', 'Di8Ap1');
 			
-			$id = R::store($user);
+			$id = RedBean_Facade::store($user);
 			
 			if ($id != null)
 			{
